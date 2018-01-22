@@ -1,1 +1,11 @@
+title: Glacier
+description: The step-by-step protocol for storing bitcoins in a highly secure way
+incremental: true
+show_dir_listting: true
+permalink: pretty
 theme: jekyll-theme-cayman
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

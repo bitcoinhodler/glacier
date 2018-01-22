@@ -1,0 +1,10 @@
+# Mac files
+.DS_Store
+
+# Jekyll artifacts
+.jekyll-metadata
+.sass-cache
+_site
+
+# Todo
+todo.md
