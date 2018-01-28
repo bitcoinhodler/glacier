@@ -1,0 +1,44 @@
+- title: Glacier overview
+  docs:
+  - index
+  - overview/key-concepts
+  - overview/multi-signature-security
+  - overview/attack-surface
+- title: Before you start
+  docs:
+  - before-you-start/index
+  - before-you-start/hardware
+  - before-you-start/structure
+- title: Setup
+  docs:
+  - setup/index
+  - setup/non-quarantined-hardware
+  - setup/quarantined-hardware
+  - setup/create-boot-usb
+  - setup/create-app-usb
+  - setup/quarantined-workspace
+- title: Deposit
+  docs:
+  - deposit/index
+  - deposit/transfer-to-paper
+  - deposit/test-deposit-withdrawal
+  - deposit/deposit-execution
+  - deposit/store-data
+- title: Withdrawal
+  docs:
+  - withdrawal/index
+  - withdrawal/transaction-construction
+  - withdrawal/execution
+- title: Balance and maintenance
+  docs:
+  - check-balance/index
+  - check-balance/maintenance
+- title: Extend Glacier
+  docs:
+  - extend/index
+  - extend/improvements
+  - extend/ecosystem
+- title: Contribute
+  docs:
+  - contribute/acknowledgments
+  - contribute/release-notes
