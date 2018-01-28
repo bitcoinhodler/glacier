@@ -3,9 +3,24 @@ description: The step-by-step protocol for storing bitcoins in a highly secure w
 incremental: true
 show_dir_listting: true
 permalink: pretty
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
+git_address: https://github.com/joaofnfernandes/glacier
+bootswatch: paper
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+collections:
+  docs:
+    permalink: /:collection/:path
+    output: true
 defaults:
   - scope:
       path: ""
     values:
-      layout: "default"
+      layout: default
+  - scope:
+      path: _docs
+      type: docs #not sure if needed
+    values:
+      layout: docs
+      sectionid: docs #try to remove it
