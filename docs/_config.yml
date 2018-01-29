@@ -1,8 +1,9 @@
 title: Glacier
 description: The step-by-step protocol for storing bitcoins in a highly secure way
 incremental: true
-show_dir_listting: true
+show_dir_listing: false
 permalink: pretty
+baseurl: "/glacier"
 #theme: jekyll-theme-cayman
 git_address: https://github.com/joaofnfernandes/glacier
 bootswatch: paper
