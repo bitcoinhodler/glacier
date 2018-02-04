@@ -3,9 +3,14 @@ description: The step-by-step protocol for storing bitcoins in a highly secure w
 incremental: true
 show_dir_listing: false
 permalink: pretty
+url: "https://joaofnfernandes.github.io/glacier"
 baseurl: "/glacier"
-#theme: jekyll-theme-cayman
+
+# Github urls
 git_address: https://github.com/joaofnfernandes/glacier
+git_edit_address: https://github.com/joaofnfernandes/glacier/edit/master/docs
+
+#theme: jekyll-theme-cayman
 bootswatch: paper
 plugins:
   - jekyll-seo-tag

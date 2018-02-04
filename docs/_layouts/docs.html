@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% capture gh_issue_url %}{{site.git_address}}/issues/new?body=Consider updating [docs/{{page.path}}]({{site.url}}{{page.url}}), because ... {% endcapture %}
+
 <div class="container">
     <div class="row">
         <div class="col-md-4">
@@ -13,8 +15,11 @@ layout: default
             <div id="markdown-content-container">{{ content }}</div>
             <p class="text-center">
               <br />
-              <a target="_blank" href="{{site.git_edit_address}}/{{ page.path }}" class="btn btn-default githubEditButton" role="button">
+              <a target="_blank" href="{{site.git_edit_address}}/{{ page.path }}" class="btn btn-default" role="button">
                 <i class="fa fa-pencil fa-lg"></i> Improve this page
+              </a>
+              <a target="_blank" href="{{gh_issue_url}}" class="btn btn-default" role="button">
+                <i class="fa fa-bug fa-lg"></i> Make a suggestion
               </a>
             </p>
         </div>
