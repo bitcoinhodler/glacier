@@ -1,0 +1,8 @@
+# These words are added to the spell checker dictionary
+# so that they are not reported as typos.
+
+GlacierScript
+Blockchain
+Coinbase
+Kraken
+Bitfinex
