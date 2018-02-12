@@ -7,7 +7,7 @@ In this section, you’ll move the cold storage data you generated in Section I 
 
 1. Transfer the private keys to paper.
   a. Write each private key on a separate piece of TerraSlate paper ( one key per page).
-    i. Do not write anything else on the paper unless specifically instructed (such as “Bitcoin”, “Glacier”, “private key”, etc.)
+    i. Do not write anything else on the paper unless specifically instructed (such as “Bitcoin”, “Glacier”, “private key”, etc.) In the event the key is seen by someone untrustworthy or stolen by a random thief, such clues help them understand the significance of the key and give them an incentive to plot further thefts or attacks.
     ii. Transcribe by hand. Do not use QR codes or any other method to transfer.
     iii. Private keys are case-sensitive.
     iv. Write clearly.
@@ -69,7 +69,9 @@ In this section, you’ll move the cold storage data you generated in Section I 
 
   When comparing the redemption script shown on the smartphone to the redemption script  in the Quarantined Scratchpad, it’s sufficient to check the first 8 characters, the last 8 characters, and a handful of characters somewhere in the middle.
 6. Power down the smartphone and return it to the Faraday bag.
-7. Shut down both quarantined computers entirely.
+7. Shut down both quarantined computers entirely. As a precaution against  side
+channel attacks , the quarantined computers should not be active except when they
+absolutely need to be.
   ```
   $ sudo shutdown now
   ```
@@ -87,10 +89,16 @@ The recommended Acer laptop may require you to hold down the power button for se
 “private key”, etc.)
   e. Save an electronic copy of the Cold Storage Information Page in a “conventionally secure” location of your choosing,
   such as a “Secure Note” in 1Password or a comparable password
-  manager.
+  manager. Because the Cold Storage Information Page contains
+  moderately-sensitive data, there are some privacy considerations with keeping and
+  electronic copy of it. See the  Sensitive Data  subsection for details.
   f. Print N copies of the Cold Storage Information Page.
   g. Shut down the computer. (It has a camera, and you will be working with critically sensitive data in a moment.)
 9. Prepare Cold Storage Information Packets
-  a. Put each handwritten private key page along with one Cold Storage Information Page in its own opaque envelope.
+  a. Put each handwritten private key page along with one Cold Storage Information
+  Page in its own opaque envelope. While this obviously won’t deter a determined
+  thief, it makes it quite difficult for a thief to steal a key without leaving
+  evidence they have done so -- and noticing theft of a single key gives you a
+  chance to move your funds away before the thief can steal a second key.
   b. Each pair of pages will be referred to as a Cold Storage Information Packet.
   c. Put your Cold Storage Information Packets somewhere out of sight for the moment.

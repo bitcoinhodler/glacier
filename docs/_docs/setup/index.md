@@ -11,25 +11,49 @@ the Glacier protocol document (the one you are reading) to ensure that it
 has not been tampered with. After verifying the document, we’ll print
 a hardcopy.
 
-1. Find a computer which has Internet access, printer
-  access, and which you have permission to install new software on.
-  We’ll refer to this computer as the “SETUP 1” computer.
+Printing is important, because a verified  electronic  copy will not be
+accessible at all times during protocol execution due to reboots and other
+changes to the computing environment. Printing a hardcopy ensures there is
+always a verified copy of the document available.
+
+1. Find a computer which has Internet access, printer access, and which you have
+permission to install new software on. We’ll refer to this computer as the
+“SETUP 1” computer.
 2. Review the errata for the version of Glacier you are using at
-https://glacierprotocol.org/errata .
+https://glacierprotocol.org/errata.
 3. Download the latest full release of Glacier ( not just the protocol document)
 at https://glacierprotocol.org/releases .
-4. If your browser does not automatically extract the ZIP file contents into a folder within your downloads directory, do so.
+4. If your browser does not automatically extract the ZIP file contents into a
+folder within your downloads directory, do so.
 5. Rename the folder to “glacier.”
-6. If you
-have used Glacier before, and you know you have the Glacier public key
+6. If you have used Glacier before, and you know you have the Glacier public key
 imported into a local GPG keyring, skip the next step. (If you don’t know,
 that’s fine; proceed as normal.)
 7. Obtain the Glacier “public key,” used to cryptographically verify the
-protocol document.
-If you are ever
-using Glacier in the future and notice that this step has changed (or that
-this warning has been removed), there is a security risk. Stop and seek
-assistance.
+<a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
+data-content="
+Technical details: Glacier’s GPG keys are handled with good security practices. They were generated while booting off an Ubuntu Live USB on a factory-new laptop with the wireless card removed, and transferred via USB to a MacBook. The private key is not stored in the cloud. The public key is hosted separately from our software distributions, on Keybase, secured with separate credentials (all of which are in password managers).
+">protocol document</a>.
+
+If you are ever using Glacier in the future and notice that this step has
+changed (or that this warning has been removed), there is a security risk.
+Stop and
+<a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
+data-content="
+Technical details: There’s a chicken-and-egg problem here, in that this document
+is giving instructions for how to verify itself. Any attacker that compromised
+this document could also compromise these instructions so that the verification
+(erroneously) passes. There’s no way to prevent this, unless a reader is familiar
+with the document  before  the compromise and recognizes that the verification
+instructions have changed. (This is why we don’t just include a direct download
+link to the public key -- if an attacker changed the link, it would be easy
+for people not to notice.)
+In the unfortunate event we  legitimately  need to change the verification
+instructions (i.e. to publish a new public key, or change the means of obtaining
+the existing key), we’ll first disseminate a public announcement, signed at a
+minimum with our personal keys, and hopefully with the keys of well-known
+individuals from the Bitcoin community.
+">seek assistance</a>.
 
   a. Access Glacier’s Keybase profile at https://keybase.io/glacierprotocol .
   b. Click the string of letters and numbers next to the key icon.
@@ -38,14 +62,31 @@ assistance.
   As...”
   e. Name the file “glacier.asc”.
 
-8. Download and install GnuPG , the software we’ll use for doing the cryptographic verification.28 29
+8. Download and install GnuPG , the software we’ll use for doing the
+<a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
+data-content="
+GnuPG is the same software recommended by the  Electronic Frontier Foundation’s
+Surveillance Self Defense protocol.
+">cryptographic verification</a>.
+<a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
+data-content="
+Technical details: Note that we are foregoing verification of the integrity of
+GnuPG itself. Verification requires having access to a pre-existing, trusted
+installation of GnuPG, and for many Glacier users, this will not be easy to
+come by. If you  do  have access to a trusted installation of GnuPG, and
+understand how to do the verification process, we encourage you to do so.
+The risk of an unverified PGP installation is relatively small, since an
+attacker would have to compromise not just the hosting of GPG distributions,
+but also the hosting of other software distributions used by Glacier, and such
+a breach would be quickly detected by the global community.
+">See tech details</a>.
 
   a. Windows: Download and install the latest available version of Gpg4win . Use
   the default options.
   b. macOS: Download and install the latest available version of GPG Suite .
   c. Linux: GnuPG comes pre-installed with Linux distributions.
 
-9. Open
+9. Open a terminal window:
 
   a. Windows: Press Windows-R, type “powershell” and click OK.
   b. macOS: Click the Searchlight (magnifying glass) icon in the menu bar, and
@@ -59,7 +100,13 @@ assistance.
   b. macOS:  $ cd $HOME/Downloads/glacier
  c. Linux: $ cd $HOME/Downloads/glacier
 
-11. Verify the integrity of the downloaded document.
+11. Verify the integrity of the
+<a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
+data-content="
+For technical background about this process, see
+https://en.wikipedia.org/wiki/Digital_signature.
+">downloaded document</a>.
+
 
   a. Import the Glacier public key
   into your local GPG installation:
@@ -80,7 +127,26 @@ assistance.
   1034 9D1B 7F53 4B43 EAB0
   ```
 
-  The warning message is expected, and is not cause for alarm.
+  The warning message is expected, and is not cause
+  <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
+  data-content="
+  Technical details:  GPG was designed on the premise that public keys would be
+  verified as actually belonging to their owners  -- either directly, by receiving
+  a key face-to-face from someone known to you, or indirectly, via cryptographic
+  signature by someone whose public key you’ve already verified. The warning
+  message merely indicates that you have done neither of these verifications for
+  Glacier’s public key.
+  This is standard practice with software distribution,  even for major software
+  packages like Ubuntu . Although you do not have the opportunity to personally
+  verify Glacier’s public key came from the Glacier team, you can nonetheless have
+  some degree of trust in the validity of the key, to the extent you trust it was
+  generated and is hosted in a secure manner, and that someone in the community
+  may have noticed and raised an alarm if it  were surreptitiously changed by an
+  attacker.
+  ">for alarm</a>.
+
+
+
 
   c. Verify the fingerprints in the fingerprint file match the fingerprints of the downloaded Glacier files.
 
@@ -94,7 +160,7 @@ assistance.
     base58.py: OK README.md: OK
     ```
 
-    On Windows:
+    On Windows 10:
     ```
     > Get-FileHash -a sha256 Glacier.pdf
     > cat SHA256SUMS | select-string -pattern "Glacier.pdf"

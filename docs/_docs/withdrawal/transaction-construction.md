@@ -31,7 +31,10 @@ On the Q1 computer:
       printed QR code (i.e. “raw unspent transaction” or “redemption script”).
   b. Close the window with the live video feed.
   c. Verify the destination address in the Quarantined Scratchpad matches your handwritten copy of the destination address.
-  d. Transcribe the other information you will be using into the Quarantined Scratchpad.
+  d. Transcribe the other information you will be using into the Quarantined
+  Scratchpad. If you make a transcription error, it will be easier to identify and
+  fix in the scratchpad compared to a situation where you transcribed it directly
+  into GlacierScript.
     i. Private keys
     ii. Fee rate
 
@@ -91,18 +94,28 @@ On the Q1 computer:
   a. On the Q2 computer, repeat step 2 above.
     i. Note: it is important to enter the private keys in the same order on each of the quarantined computers.
 
-  b. Verify that the “Transaction fingerprint” output by GlacierScript is identical on both computers.
-  c. If there are any discrepancies, do not proceed. Restart the Withdrawal Protocol and seek assistance if discrepancies persist.
+  b. Verify that the “Transaction fingerprint” output by GlacierScript is identical
+  on both computers. It is possible for malware to exfiltrate bits of the private
+  key in the transaction signature by choosing the nonce in a particular way.
+  Bitcoin Core generates the nonce deterministically, as a function of a hash of the
+  transaction, so we can detect the presence of any environment-specific malware by
+  comparing the transaction generated in each quarantined environment.
+  c. If there are any discrepancies, do not proceed. Restart the Withdrawal Protocol
+  and seek assistance if discrepancies persist.
 4. Visually hide all critically sensitive data.
 
-We’ll be using a smartphone with a live Internet connection to read QR codes from the quarantined computer screens. Any malware (or a malicious QR reader app) could steal sensitive data if it is not visually hidden.
+We’ll be using a smartphone with a live Internet connection to read QR codes from
+the quarantined computer screens. Any malware (or a malicious QR reader app) could
+steal sensitive data if it is not visually hidden.
 
 This step is important. Failing to execute it properly creates a substantial security risk.
 
-  a. Put your Cold Storage Information Packets out of sight -- this prevents a smartphone camera from accidentally seeing them.
+  a. Put your Cold Storage Information Packets out of sight -- this prevents a
+  smartphone camera from accidentally seeing them.
   b. Delete all text from the Quarantined Scratchpad on the Q1 and Q2 computers.
   c. On the Q1 computer:
-    i. Copy-paste the raw signed transaction from the terminal window to the Quarantined Scratchpad.
+    i. Copy-paste the raw signed transaction from the terminal window to the
+    Quarantined Scratchpad.
     ii. Enable line wrapping so the entire raw signed transaction can be seen.
       1. With the Quarantined Scratchpad window active, go to the menu bar at the top of the screen.
       2. Select Edit.
@@ -121,7 +134,9 @@ This step is important. Failing to execute it properly creates a substantial sec
     iii. Verify the raw signed transaction on the smartphone matches the signed transaction data in the Quarantined Scratchpad. You only need to verify the first 16 characters, last 16 characters, and a few somewhere in the middle.
     iv. If it does not match, do not proceed. Try using a different QR reader application or restarting the Withdrawal Protocol. Seek assistance if discrepancies persist.
     v. Use the smartphone to send the raw signed transaction to yourself using a messaging app which you’ll be able to access from a laptop.
-6. Shut down both quarantined computers entirely.
+6. Shut down both quarantined computers entirely. As a precaution against  side
+channel attacks , the quarantined computers should not be active except when they
+absolutely need to be.
 ```
 $ sudo shutdown now
 ```

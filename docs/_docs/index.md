@@ -13,6 +13,14 @@ to funds by a single individual.
 * **Large amounts of money ($100,000+)**: Glacier thoroughly considers corner
 cases such as obscure vectors for malware infection, personal estate
 planning, human error resulting in loss of funds, and so on.
+Even if your Bitcoin holdings are more modest, it’s worth considering using
+Glacier. If Bitcoin proves successful as a global currency, it will appreciate
+10x (or much more) in the coming years. Security will become increasingly
+important if your holdings appreciate and Bitcoin becomes a more attractive
+target for thieves.
+The “Protocol Overview” section also describes some lower-security, lower-cost
+approaches to self-managed storage that may be more appropriate for smaller
+amounts of funds.
 * **Long-term storage**: Glacier not only considers the Bitcoin security
 landscape today, but also a future world where Bitcoin is much more valuable
 and attracts many more security threats.
@@ -28,8 +36,8 @@ already possess bitcoins and wish to store them more securely.
 
 If you are already familiar with Bitcoin security concepts and are certain that
 you want high security cold storage, you may prefer to read
-[Trusting This Protocol]() and then skip to the section
-[Choosing a Multisignature Withdrawal Policy]().
+Trusting This Protocol and then skip to the section
+Choosing a Multisignature Withdrawal Policy.
 
 ## Trusting this protocol
 
@@ -83,7 +91,16 @@ likely to be found and exploited.
 4. Internal theft: They have to protect against internal theft from a large
 group of employees & contractors.
 5. Intentional seizure: They have the ability (whether of their own volition,
-or under pressure from governments3) to seize your funds.
+or under pressure from governments) to seize your funds.
+There is historical precedent for this, even if funds are not suspected of
+criminal involvement. In 2010,  Cyprus unilaterally seized many bank depositors’
+funds  to cope with an economic crisis. In 1933, the US abruptly demanded
+citizens surrender almost all gold they owned to the government .
+Regardless of how one views the political desirability of these particular
+decisions, there is precedent for governments taking such an action, and one
+cannot necessarily predict the reasons they might do so in the future.
+Furthermore,Bitcoin still operates in a political and legal grey zone, which
+increases these political risks.
 
 Some online wallet services have insurance to cover losses, although that
 insurance doesn’t protect against all of these scenarios, and often has limits
@@ -122,7 +139,10 @@ all hardware wallets today operate via a physical USB link to a regular
 computer. While they employ extensive safeguards to prevent any sensitive
 data (such as private keys) from being transmitted over this connection,
 it’s possible that an undiscovered vulnerability could be exploited by
-malware to steal private keys from the device.4
+malware to steal private keys from the device.
+
+For details on this and other security considerations, see the
+“No Hardware Wallets” section of the  Glacier design document.
 
 As with online multisig
 vaults, many people do use hardware wallets to store sizeable amounts of

@@ -13,7 +13,17 @@ The first two USB drives (“Setup Boot USBs”) are the USB drives you labeled 
 which may be running Windows, macOS, or something else.
 
 The last two USB drives (“Quarantined Boot USBs”) are the USB drives you labeled “Q1 BOOT” and “Q2 BOOT” in Section II. They will be prepared using your Setup
-Computers while booted off a Setup Boot USB.40
+Computers while booted off a Setup Boot USB.
+
+Technical details: The Non-Quarantined OS USBs serve two purposes:
+* First, they are used for creating the Quarantined App USBs in the next
+section, which greatly simplifies the process of doing so because we know
+it’ll always be done from an Ubuntu environment. (We can’t use the
+Quarantined OS USBs for this -- they’re eternally quarantined, so they need to
+be permanently unplugged from their Setup Computer the moment they are created.)
+* Second, it will be harder for any malware infections on a Setup Computer’s
+default OS to undermine a Quarantined USB setup process (the malware would
+first  have to propagate itself to the Non-Quarantined OS USB).
 
 1. Perform the following steps on your SETUP 1 computer.
 2. If you are not already reading this document on the SETUP 1 computer, open a
@@ -36,7 +46,7 @@ Wait until the download is complete.
     ii. macOS:  $ cd $HOME/Downloads
     iii. Linux: $ cd $HOME/Downloads
 
-  b. View the fingerprint of the file:41
+  b. View the fingerprint of the file:
     i. Windows: > Get-FileHash -a sha256 ubuntu-16.04.1-desktop-amd64.iso
     ii. macOS: $ shasum -a 256 ubuntu-16.04.1-desktop-amd64.iso
     iii. Ubuntu: $ sha256sum ubuntu-16.04.1-desktop-amd64.iso
@@ -48,6 +58,14 @@ Wait until the download is complete.
 It’s not important to check every single character when visually verifying
 a fingerprint. It’s sufficient to check the first 8 characters, last
 8 characters, and a few somewhere in the middle.
+
+Technical details: Because you verified the checksum & checksum signature for
+this document in Section I, we are omitting the GPG verification of some other
+fingerprints in the protocol. For a detailed security analysis, see the  design
+document.
+
+You can verify this is the official Ubuntu fingerprint  here , or follow
+Ubuntu’s full verification process using this guide.
 
 6. Create the SETUP 1 BOOT USB.
   a. Windows44
@@ -123,7 +141,15 @@ a fingerprint. It’s sufficient to check the first 8 characters, last
     8. Wait a few minutes for the copying process to complete.
   iii. Verify the integrity of the SETUP 1 BOOT USB (i.e. no errors or malware
     1. On your desktop, right-click the corresponding USB drive icon in your dock and select Eject from the pop-up menu.
-    2. Remove the USB drive from the USB slot and immediately re-insert it.50
+    2. Remove the USB drive from the USB slot and immediately
+    <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
+    data-content="
+    Technical details: In order to avoid detection, it’s conceivable that malware
+    might wait until a USB drive is in the process of being ejected (and all
+    integrity checks presumably completed) before infecting the USB. Ejecting and
+    re-inserting the USB before  integrity checking is a simple workaround to
+    defend against this.
+    ">re-insert it</a>.
     3. Wait 10 seconds for the operating system to recognize the USB.
     4. $ cd $HOME/Downloads51
     5.
@@ -155,7 +181,9 @@ a fingerprint. It’s sufficient to check the first 8 characters, last
       1. PC: Varies by manufacturer; option will often say “USB” and/or “UEFI”.
         a. On the recommended Dell laptop, select “USB1” under “UEFI OPTIONS”.
         b. The recommended Acer laptop does not have a boot menu. See below for instructions.
-      2. Mac: Click the “EFI Boot” option and then click the up arrow underneath it.53 You do not need to select a network at this time.
+      2. Mac: Click the “EFI Boot” option and then click the up arrow underneath it. You do not need to select a network at this time. If more than one
+      identical “EFI boot” option is shown, you may need to guess and reboot
+      if you pick the wrong one.
     iv. Some laptops don’t have a boot device selection menu, and you need to go into the BIOS configuration and change the boot order so that the USB drive is first.
       1. On the recommended Acer laptop:
         a. Press F2 while booting to enter BIOS configuration.

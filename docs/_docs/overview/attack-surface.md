@@ -74,3 +74,26 @@ software
 * A flaw in GlacierScript causes sensitive data to be leaked or flawed
 * Human error during protocol execution
 * Design failure in the protocol misses or inadequately addresses a risk
+
+For potential man-in-the-middle vulnerabilities, we mitigate this by signing a
+checksum of the Glacier document itself, and including steps in the protocol for
+users to verify the signature and checksum. But this is not foolproof:
+
+
+An attacker could remove the self-verification procedure from the protocol document,
+and many users would not notice.
+* An attacker could compromise our keypair and create a fraudulent signature
+(although this is exceedingly unlikely, due to Keybase’s key verification systems)
+* The protocol document  does  begin with document self-verification on one Setup
+Computer. However, it doesn’t guide the user through self-verification on the second
+Setup Computer. Nor does it have them re-verify the document when they first boot
+into Ubuntu on the Setup Computers to create the Quarantined Boot USBs. If the
+portion of the protocol document related to creating the Quarantined Boot USBs were
+compromised between the initial self-validation & the later re-validation (when
+creating the Quarantined App USBs), the user would probably not notice, even without
+a forged signature.
+* Protocol hardcopy is compromised (e.g. by malware to alter the user’s hardcopy as
+it is printed)
+* A flaw in GlacierScript causes sensitive data to be leaked or flawed
+* Human error during protocol execution
+* Design failure in the protocol misses or inadequately addresses a risk

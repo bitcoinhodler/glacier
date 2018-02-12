@@ -11,6 +11,11 @@ which will be used as “Setup Computers” to set up USB drives.
   c. Importantly, at least one computer should be a computer that you do not
   own, or that doesn't spend much time on your home or office network.
 
+  It’s not technically  ownership  that’s important. But computers you own are
+  more likely to run the same software, have visited the same websites, or have
+  been exposed to the same USB drives or networks -- and therefore to have the
+  same malware.
+
 2. Using sticky notes, label the two Setup Computers “SETUP 1” and “SETUP 2”.
 3. With a permanent marker, label two USB drives “SETUP 1 BOOT” and “SETUP
 2 BOOT”.

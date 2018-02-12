@@ -24,7 +24,7 @@ first time and do not plan on executing the Deposit or Withdrawal protocol now, 
     i. Unplug both Quarantined Computers from the wall.
     ii. Run them only on battery power throughout this protocol.
     iii. Make sure they are fully charged first! If you run out of battery, you’ll need to start over.
-  d. Radio and other side channels
+  d. Radio and other side channels. Including seismic, thermal, and magnetic .
     i. Turn off all other computers and smartphones in the room.
     ii. Put portable computing devices in the Faraday bag and seal the bag.
     iii. Unplug desktop computers.

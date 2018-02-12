@@ -71,7 +71,7 @@ already. (See the instructions in Section III for details.)
         3. Login again with user “ubuntu” and leave the password blank.
   5. Open the Glacier protocol document so that it is available for copy-pasting terminal commands.
   6. Install the remaining application software on the Q1 APP USB.
-    a. Configure our system to enable access to the software we need in Ubuntu’s “package repository”:57 58
+    a. Configure our system to enable access to the software we need in Ubuntu’s “package repository”.On Ubuntu 16.04.01  there is a bug  in Ubuntu’s package manager that affects systems running off a bootable Ubuntu USB. The commands in steps a and b are a workaround.
       i. $ sudo mv /var/cache/app-info/xapian/default /var/cache/app-info/xapian/default_old
       ii. $ sudo mv /var/cache/app-info/xapian/default_old /var/cache/app-info/xapian/default
       iii. $ sudo apt-add-repository universe
@@ -99,7 +99,12 @@ already. (See the instructions in Section III for details.)
    apps
   glacier
   ```
-  Click the apps folder. It will have the following content:
+
+  Click the apps folder. It will have the following content.
+  Note that the version number of the Bitcoin package may change as new
+  versions are released. Future versions of Glacier may pin to a specific
+  version.
+
   ```
   bitcoind_0.13.2-xenial1_amd64.deb
   libboost-chrono1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb

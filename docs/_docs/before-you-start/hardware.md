@@ -31,7 +31,7 @@ Used / existing computing equipment
 * Two (2) factory-sealed USB drives (2GB+) [Amazon: Verbatim 2GB ]
 * Precision screwdrivers [ Amazon ], for removing WiFi cards from laptops
 * Electrical tape [ Amazon ]
-* Casino-grade six-sided dice.19 [Amazon] (Regular dice are insufficient.20)
+* Casino-grade six-sided dice. [Amazon] (Regular dice are insufficient.20)
 * Faraday bag [ Amazon ]. Used to prevent smartphone malware from stealing sensitive data using radio frequencies .
 * Table fan [ Amazon ]. White noise can prevent malware on nearby devices from stealing sensitive data using sound .
 * Home safe [ Amazon ]. Consider bolting it to your floor to deter theft.
@@ -39,3 +39,18 @@ Used / existing computing equipment
 tear-resistant.
 * Cardboard envelopes, for opacity [ Amazon ]
 * Tamper-resistant seals [ Amazon ]
+
+### Notes
+
+Standard software algorithms that generate random numbers, such as those used
+to generate Bitcoin private keys, are  vulnerable to exploitation , either due
+to malware or algorithmic weakness (i.e. they often provide numbers that are not
+truly random). Dice offer something closer to true randomness.
+
+Casino dice are created specifically to remove any potential dice bias
+(square corners, filled in pips, low manufacturing tolerance, etc.) That’s why
+casinos use them!
+
+TerraSlate paper is extremely rugged, but you might also consider laminating the
+paper for additional protection. You’ll need a thermal laminator and laminating
+pouches.

@@ -20,8 +20,19 @@ On any Internet-connected computer:
 3. Identify the blockchain transactions associated with the funds you’d like to withdraw.
   a. Go to Blockchain.info , paste your cold storage address into the search bar, and press Enter.
   b. You’ll be taken to a page that says “Bitcoin Address” at the top, with your cold storage address listed underneath.
-  c. Click the “Unspent Outputs” link. The page will show a list of transaction IDs (in horizontal gray bars) and their corresponding amounts (in green boxes).
-  d. Identify a set of transaction IDs whose amounts are cumulatively greater than or equal to the amount you would like to withdraw.
+  c. Click the “Unspent Outputs” link. The page will show a list of transaction IDs
+  (in horizontal gray bars) and their corresponding amounts (in green boxes).
+  Each transaction ID corresponds to a deposit you made, the  remainder  of a deposit
+  you made after doing a partial withdrawal, or a deposit  someone else  made to your
+  cold storage address.
+  If you’re taken to a page that says “No free outputs to spend”, this indicates a
+  zero balance at the address. Verify you pasted the address correctly.
+  d. Identify a set of transaction IDs whose amounts are cumulatively greater than or
+  equal to the amount you would like to withdraw.
+  If a transaction ID is listed more than once (i.e. the same transaction has more
+  than one unspent output going to your cold storage address), you just need to
+  include the transaction ID once. GlacierScript will include all UTXOs in every
+  supplied transaction ID.
   e. Copy-paste these transaction IDs to a temporary scratchpad for reference.
   f. These will be referred to as unspent transaction IDs .
 4. Get raw data for blockchain transactions.
@@ -66,14 +77,24 @@ On any Internet-connected computer:
     ii. If you are performing an initial test withdrawal, you’ll need all Cold Storage Information packets .
 
     b. Get transaction fee market data.
+    The operators of the Bitcoin network require a (very small) fee for processing
+    transactions. There is not a fixed fee schedule; if the fee is too low, the
+    withdrawal will never get processed, and if the fee is too high, you
+    unnecessarily waste money. This data will be used to calculate a reasonable fee
+    for expedient transaction processing.
       i. Go to https://bitcoinfees.21.co/api/v1/fees/recommended
 
       Example page content:
       ```
       {"fastestFee":100,"halfHourFee":100,"hourFee":70}
       ```
-    ii. Note the number next to “fastestFee” -- in the above example, 100.86
+    ii. Note the number next to “fastestFee” -- in the above example, 100.
+    This indicates that paying 100 satoshis/byte is sufficient to be among the
+    transactions processed most quickly by the Bitcoin network.(1satoshi=10^-8
+      BTC,and a typical transaction is under 1000 bytes).
 
-    As of January 2017, the number 100 is typical. If the number is radically different ( not between 10 and 1000), stop; something may be wrong. Seek assistance.
+    As of January 2017, the number 100 is typical. If the number is radically
+    different ( not between 10 and 1000), stop; something may be wrong. Seek
+    assistance.
 
     iii. Write that number down on a piece of paper labeled “Fee rate”.

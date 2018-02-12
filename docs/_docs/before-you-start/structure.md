@@ -40,14 +40,29 @@ script) will be highlighted in yellow, like this:
 moderately-sensitive-data-here .
 
 Moderately sensitive data impacts
-privacy, but does not directly impact security.22 It cannot be used to
+privacy, but does not directly impact security. It cannot be used to
 steal your bitcoins, but it can be used to see how many bitcoins you own
 (if someone knows that the moderately sensitive data in question belongs
 to you).
 
+It does  indirectly  impact security, in that if someone knows you own a lot of
+difficult-to-trace money, they have some incentive to rob, extort, or attack you
+to get it.
+
 The protocol recommends storing copies of moderately-sensitive
 data electronically, in a “conventionally secure” manner (for example, in
-a password manager such as 1Password ).23 If you’re
+a password manager such as 1Password ). If you’re particularly concerned about
+privacy, you  can  forego electronic storage, because the protocol also stores
+copies of moderately-sensitive data in cold storage with each private key.
+However, this is not recommended.
+
+This means that  knowledge of  your cold storage balance will be as secure as
+access to  any accounts which have their credentials stored in your password
+manager. For most people, this is sufficient.
+
+If you use only hardcopies, you’ll need to manually type in a large amount of
+gibberish data, by hand, with no errors, every time you withdraw funds from
+cold storage.
 
 ### Terminal Usage
 

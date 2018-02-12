@@ -39,20 +39,26 @@ essentially useless for anything else but executing this protocol.
 There is a class of attacks which rely not on stealing
 your sensitive data (e.g. private keys), but in subverting the process of
 generating your sensitive data so it can be more easily guessed by a third
-party.10 We call this “flawed data.”
+party. We call this “flawed data.”
+
+For example, a variant of the  Trojan.Bitclip attack  which replaces keys
+displayed on your screen (or keys stored in your clipboard) with insecure keys.
 
 Because we are generating our data in
 eternally quarantined environments, any malware infection attempting this is
 unlikely to have come from your other computers -- it would likely have
 already been present when the quarantined system arrived from the
-manufacturer.11
+manufacturer. For example, the  Lenovo rootkit or this Dell firmware malware
+infection.
 
 The way to defeat these attacks is to detect them before
 we actually use the flawed data. We can detect such an attack by
 replicating the entire data generation process on two sets of eternally
 quarantined hardware, from different manufacturers. If the process
 generates identical data on both sets of hardware, we can be highly
-confident the data is not flawed.
+confident the data is not flawed because it would have to be an identical
+attack present on both sets of hardware, factory-new from different
+manufacturers. This is exceptionally unlikely.
 
 
 ## Bitcoin Core and GlacierScript
@@ -78,6 +84,9 @@ policy. Each packet includes the following information:
 * The cold storage address -- an alphanumeric string designating the virtual “location” of the funds
 * The “redemption script” -- an additional code needed to access funds, shared
 by all private keys.
+
+Technical details: The Glacier protocol reuses Bitcoin addresses. See the
+design document  for a detailed analysis.
 
 ## Protocol Cost
 
@@ -118,10 +127,13 @@ uncertainty.
 
 If privacy is very important to you, you might consider using
 a service like Shapeshift to exchange your Bitcoins for an more anonymous
-cryptocurrency, such as Monero , and then exchange them back to Bitcoins.14
+cryptocurrency, such as Monero , and then exchange them back to Bitcoins.
 However, this will cost you fees, and importantly, it requires you trust the
 operator of the exchange service not to steal or lose your
 funds.
+
+This guide  gives additional detail about how to increase Bitcoin anonymity
+using Monero & Tor.
 
 ## Lower-security Protocol Variants
 
@@ -143,10 +155,13 @@ stack.
 but existing laptops you already possess, disabling all network
 connections during protocol execution, instead of purchasing new
 quarantined hardware. This fails to protect against some malware
-attacks15, but provides additional savings in cost and effort.
+attacks, but provides additional savings in cost and effort.
 
-These
-modifications are left as an exercise to the reader.
+Such as an  existing infection of a laptop’s firmware , malware which overrides
+OS settings to disable wireless connectivity, or certain undiscovered
+vulnerabilities in the software used by the protocol.
+
+These modifications are left as an exercise to the reader.
 
 ## Out of scope
 

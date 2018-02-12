@@ -13,22 +13,55 @@ We do not recommend considering these measures unless you feel you have a strong
 
 ## Digital software security
 
-* Verify GnuPG installation: When downloading a new copy of GnuPG on the setup computer, one would ideally also verify the integrity of the download using the signed checksum. This requires having a pre-existing trusted installation of GnuPG available for verifying the checksum signature.
-* Cross-network checksum sourcing: Using two different computers on two different networks, obtain all the software checksums from the Internet and verify they are identical, to reduce the risk that the checksums are being compromised by a man-in-the-middle attack.
-* Quarantined checksum verification: Verify all USB checksums on the quarantined computers to eliminate any risk that software was altered between checksum verification on the Setup Computers and when the USB is used in the quarantined environment.
-* Greater differentiation of quarantined environments: Instead of simply using different hardware in each quarantined environment, use different software94 (including a non-Linux-derived OS and a different Bitcoin wallet), different smartphones (and different smartphone software, i.e. QR code readers).
- * Dedicated pair of environments for each private key: Use extra environments such that each environment only touches one key both when generating keys and signing transactions. Expand the definition of “environment” to include the physical location in which Glacier is executed. This way, compromising one environment will only compromise one key.
-* Deposit transaction verification: If depositing bitcoins out of self-managed storage, don’t immediately send a transaction directly from one’s own wallet software. Instead, first export a raw signed transaction, and use a service like Blockr to verify the transaction is actually sending the funds to the correct address.
-* Avoid software random number generators: Use a hardware random number generator instead.
+* Verify GnuPG installation: When downloading a new copy of GnuPG on the setup
+computer, one would ideally also verify the integrity of the download using the
+signed checksum. This requires having a pre-existing trusted installation of GnuPG
+available for verifying the checksum signature.
+* Cross-network checksum sourcing: Using two different computers on two different
+networks, obtain all the software checksums from the Internet and verify they are
+identical, to reduce the risk that the checksums are being compromised by a
+man-in-the-middle attack.
+* Quarantined checksum verification: Verify all USB checksums on the quarantined
+computers to eliminate any risk that software was altered between checksum
+verification on the Setup Computers and when the USB is used in the quarantined
+environment.
+The only reason Glacier doesn’t currently do this is because the process of
+verifying the App USB checksums happens as part of Ubuntu’s apt-get application,
+which requires network connectivity. It can be done by hand without apt-get, but
+it’s significantly more involved and so was not included in the protocol.
+* Greater differentiation of quarantined environments: Instead of simply using
+different hardware in each quarantined environment, use different software94
+(including a non-Linux-derived OS and a different Bitcoin wallet), different
+smartphones (and different smartphone software, i.e. QR code readers).
+Different software stacks eliminate the risk that a software bug or vulnerability
+may generate a flawed key. See the  design document  for details on why this risk is
+small enough to justify leaving it unaddressed in the formal protocol.
+* Dedicated pair of environments for each private key: Use extra environments such
+that each environment only touches one key both when generating keys and signing
+transactions. Expand the definition of “environment” to include the physical
+location in which Glacier is executed. This way, compromising one environment will
+only compromise one key.
+* Deposit transaction verification: If depositing bitcoins out of self-managed
+storage, don’t immediately send a transaction directly from one’s own wallet
+software. Instead, first export a raw signed transaction, and use a service like
+Blockr to verify the transaction is actually sending the funds to the correct
+address.
+* Avoid software random number generators: Use a hardware random number generator
+instead.
 
 ## Side channel security
-* Faraday cage: Use a Faraday cage to protect against electromagnetic side channels ( example ). Faraday cages can be self-built or professionally built .
+* Faraday cage: Use a Faraday cage to protect against electromagnetic side channels
+( example ). Faraday cages can be self-built or professionally built .
 * No QR
 codes: Reading and relaying QR codes to a printer requires a networked
 device, such as a smartphone, which could potentially receive data from
 side channels. Instead of using QR codes, copy all redemption scripts and
 transactions by hand, and keep all nearby smartphones powered off and in
 Faraday bags through protocol execution.
+Note that transcription of redeem scripts and transactions is not only a
+painstakingly long process, but dangerously vulnerable to human error: any mistakes
+in the initial transcription & storage of the redemption script will cause all funds
+to be lost.
 
 ## Hardware security
 * Purchase
@@ -58,14 +91,22 @@ recreate, so if the laptop is tampered with, you can see it, and know not
 to use it for future protocol operations.
 * Secure or destroy quarantined
 hardware after use: If sensitive data was somehow stored on quarantined
-hardware’s permanent media due to a protocol error96 or malware, then
+hardware’s permanent media due to a protocol error or malware, then
 physical theft of the hardware becomes a concern. Store the hardware
 somewhere secure such as a vault, or physically destroy it first.
+Glacier is designed to only use a RAM disk, but it’s possible some data is saved to
+permanent media (hard drive or USB) without us realizing it.
 
 ## Paper key security
-* Paper key encryption: Encrypt the contents of your paper
-keys using BIP38 to further protect
-against physical theft.
+* Paper key encryption: Encrypt the contents of your paper keys using BIP38 to
+further protect against physical theft.
+Note that the question of how to securely store the passphrase is non-trivial. It
+should be unique and hard to guess, which means it is non-trivial to remember. If
+you are confident you can remember it, storing it only in your own memory will not
+address estate planning needs. If you record it on paper, you need to make sure
+those papers are stored securely -- they should not be stored with the keys, and
+there should be a process for checking on them periodically to make sure they are
+not lost or damaged.
 * Durable storage medium: TerraSlate paper is extremely rugged, but you
 might also consider laminating the paper for additional protection. You’ll
 need a thermal laminator [ Amazon ] and laminating pouches [ Amazon ]. An

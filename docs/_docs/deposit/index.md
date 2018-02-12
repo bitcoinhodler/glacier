@@ -33,8 +33,10 @@ Protocol unless explicitly instructed otherwise.
 
   a. Generate dice entropy
     i. Type “DICE ENTROPY” into both Quarantined Scratchpads.
-    ii. Roll 62 six-sided dice63, shaking the dice thoroughly each roll.
-    iii. If you are rolling multiple dice at the same time, read the dice left-to-right. This is important.
+    ii. Roll 62 six-sided dice, shaking the dice thoroughly each roll.
+    62 dice rolls corresponds to 160 bits of entropy. See the design document
+    for details.
+    iii. If you are rolling multiple dice at the same time, read the dice left-to-right. This is important. Humans are  horrible at generating random data  and great at noticing patterns. Without a consistent heuristic like “read the dice left to right”, you may subconsciously read them in a non-random order (like tending to record lower numbers first). This can drastically undermine the randomness of the data, and could be exploited to guess your private keys.
     iv. Manually enter the numbers into the Quarantined Scratchpads on both quarantined computers. Put all rolls on the same line to create one line of 62 numbers . (It’s fine to add spaces for readability.)
   b. Repeat this process a total of N times, so that you have a total of N lines of numbers in each Quarantined Scratchpad. Generate computer entropy
     i. Type “COMPUTER ENTROPY” into both computers’ Quarantined Scratchpads. (This is a descriptive heading to keep your notes organized and minimize risk of error.)
@@ -105,7 +107,17 @@ Protocol unless explicitly instructed otherwise.
     2. Cold storage address
     3. Redemption script
 
-    For the private keys and cold storage address, verify every character. For the redemption script, it’s sufficient to check the first 8 characters, last 8 characters, and a few somewhere in the middle.
+    For the private keys and cold storage address, verify every character. For the
+    redemption script, it’s sufficient to check the first 8 characters, last 8
+    characters, and a few somewhere in the middle.
+
+    There are attack vectors which could replace just a  portion  of private
+    keys or a cold storage address, making the private keys easier to brute
+    force, so it’s important to check them thoroughly. If we know the private keys
+    and cold storage address are good, then the redemption script is almost
+    certainly good as well. And if there  are  any errors in the redemption script,
+    they will be caught during the test deposit & withdrawal process later in the
+    protocol; a painstaking manual verification is not required.
 
     iii. If there are any discrepancies, do not proceed.
       1. Check whether the entropy in both Quarantined Scratchpads matches precisely.
