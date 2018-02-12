@@ -9,4 +9,4 @@ COPY .spelling .
 WORKDIR /src
 VOLUME /src
 
-CMD ["mdspell", "--en-us",  "--no-suggestions", "--ignore-acronyms", "--ignore-numbers", "--report", "--target-relalative", "/spellcheck/.spelling", "-r", "**/*.md"]
+CMD ["mdspell", "--en-us",  "--no-suggestions", "--ignore-acronyms", "--ignore-numbers", "--report", "--target-relative", "/spellcheck/.spelling",  "**/*.md"]

@@ -12,7 +12,7 @@ spell-check: dockerfiles/bin/.spellcheck
 #	Build Docker images
 ################################################################################
 
-dockerfiles/bin/.spellcheck: dockerfiles/spellcheck/Dockerfile
+dockerfiles/bin/.spellcheck: dockerfiles/spellcheck/Dockerfile dockerfiles/spellcheck/.spelling
 	@docker build -t spellcheck -f $< $(<D)
 	@touch $@
 
