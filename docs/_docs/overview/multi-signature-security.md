@@ -20,7 +20,7 @@ This makes it difficult to keep funds highly secure. For example, you
 might store a private key on paper in a safe deposit box at a bank, and feel
 fairly safe. But even this is not the most robust solution. The box could be
 destroyed in a disaster, or be robbed (perhaps via identity theft), or
-intentionally seized.
+[intentionally seized](http://abcnews.go.com/GMA/story?id=4832471){: target="_blank" ._}.
 
 You can try to mitigate these risks by storing the key yourself, perhaps in a
 fireproof home safe (as opposed to a bank). But this introduces new risks. A
@@ -85,7 +85,7 @@ stolen.
 The keys will be distributed as follows:
 
 * One in a safe at home
-* The remaining three in safe deposit boxes or private vaults at
+* The remaining three in safe deposit boxes or [private vaults](https://www.google.com/search?q=private+safe+deposit+box){: target="_blank" ._} at
 different locations
 
 It’s important to think about estate planning -- making
@@ -133,8 +133,9 @@ your money.
 they may lose it.
 * **Signatory safety**: Giving your signatories custody of a valuable key may
 expose them to the risk of targeted physical theft.
-* **Kidnapping risk**: If you anticipate traveling in high-crime areas
-with kidnapping risk , your funds will be at greater risk because you’ll
+* **Kidnapping risk**: If you anticipate traveling in
+[high-crime areas with kidnapping risk](http://www.nytimes.com/2012/05/03/business/kidnapping-becomes-a-growing-travel-risk.html){: target="_blank" ._},
+your funds will be at greater risk because you’ll
 have the ability to access them remotely (by contacting your signatories and
 asking for their keys).
 Financially-motivated kidnapping hinges on your ability to access funds to give

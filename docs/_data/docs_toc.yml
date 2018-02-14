@@ -40,5 +40,6 @@
   - extend/ecosystem
 - title: Contribute
   docs:
+  - contribute/license
   - contribute/acknowledgments
   - contribute/release-notes

@@ -46,12 +46,12 @@ storage, don’t immediately send a transaction directly from one’s own wallet
 software. Instead, first export a raw signed transaction, and use a service like
 Blockr to verify the transaction is actually sending the funds to the correct
 address.
-* Avoid software random number generators: Use a hardware random number generator
-instead.
+* Avoid software random number generators: Use a
+[hardware random number generator](https://en.wikipedia.org/wiki/Comparison_of_hardware_random_number_generators){: target="_blank" ._} instead.
 
 ## Side channel security
-* Faraday cage: Use a Faraday cage to protect against electromagnetic side channels
-( example ). Faraday cages can be self-built or professionally built .
+* Faraday cage: Use a [Faraday cage](https://en.wikipedia.org/wiki/Faraday_cage){: target="_blank" ._} to protect against electromagnetic side channels
+( example ). Faraday cages can be [self-built](https://www.thesurvivalistblog.net/build-your-own-faraday-cage-heres-how/){: target="_blank" ._} or [professionally built](https://www.faradaycages.com/server-rooms){: target="_blank" ._}.
 * No QR
 codes: Reading and relaying QR codes to a printer requires a networked
 device, such as a smartphone, which could potentially receive data from
@@ -69,8 +69,12 @@ factory-new Setup Computers: Don’t use existing computers for your Setup
 Computers. Purchase them factory-new, and never use them on the same
 network (to reduce the risk of infection by identical malware).
 * Use firmware-protected USBs: Some USBs have extra features to protect against
-malware targeting their firmware (e.g. BadUSB or Psychson ). Examples
-include Kanguru drives and IronKey drives .
+malware targeting their firmware (e.g.
+[BadUSB](https://arstechnica.com/information-technology/2014/07/this-thumbdrive-hacks-computers-badusb-exploit-makes-devices-turn-evil/){: target="_blank" ._} or
+[Psychson](https://github.com/brandonlw/Psychson){: target="_blank" ._}).
+Examples include
+[Kanguru drives](https://www.kanguru.com/secure-storage/defender-secure-flash-drives.shtml){: target="_blank" ._} and
+[IronKey drives](http://www.ironkey.com/en-US/encrypted-storage-drives/250-basic.html){: target="_blank" ._}.
 * Purchase a factory-new printer: Printers can have malware, which could conceivably interfere with printing the hardcopy of the Glacier document. Use a new printer for printing the Glacier document. Choose one without wireless
 capabilities.
 * Purchase non-recommended equipment: Don’t purchase any
@@ -80,8 +84,9 @@ undermine the protocol (e.g. loaded dice, malware pre-installed on
 computers, etc.) Select your own comparable equipment from different
 manufacturers.
 * Purchase from stores:  Buy all equipment from stores,
-to reduce the risk it will be tampered with before it is delivered to you
-. Don’t choose the stores nearest your home or office. Don’t leave the
+to reduce the risk it will be
+[tampered with before it is delivered to you](https://arstechnica.com/tech-policy/2014/05/photos-of-an-nsa-upgrade-factory-show-cisco-router-getting-implant/){: target="_blank" ._}.
+Don’t choose the stores nearest your home or office. Don’t leave the
 equipment unattended until you are done using it.
 * Improved
 tamper-evident seals on laptops: After you are done using the laptop,
@@ -98,8 +103,9 @@ Glacier is designed to only use a RAM disk, but it’s possible some data is sav
 permanent media (hard drive or USB) without us realizing it.
 
 ## Paper key security
-* Paper key encryption: Encrypt the contents of your paper keys using BIP38 to
-further protect against physical theft.
+* Paper key encryption: Encrypt the contents of your paper keys using
+[BIP38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki){: target="_blank" ._}
+to further protect against physical theft.
 Note that the question of how to securely store the passphrase is non-trivial. It
 should be unique and hard to guess, which means it is non-trivial to remember. If
 you are confident you can remember it, storing it only in your own memory will not
@@ -109,11 +115,13 @@ there should be a process for checking on them periodically to make sure they ar
 not lost or damaged.
 * Durable storage medium: TerraSlate paper is extremely rugged, but you
 might also consider laminating the paper for additional protection. You’ll
-need a thermal laminator [ Amazon ] and laminating pouches [ Amazon ]. An
+need a [thermal laminator](http://a.co/cZBN1YU){: target="_blank" ._} and
+[laminating pouches](http://a.co/ifISzje){: target="_blank" ._}. An
 even more durable approach would be to engrave the private keys in
 metal.
 * High-security vaults: Store keys in high-security vaults that
-are more resistant to theft and disaster. ( example )
+are more resistant to theft and disaster.
+[See example](http://mountainvault.net/){: target="_blank" ._}.
 * Geographically
 distributed storage: Store keys in distant cities for resilience against
 a major disaster that wipes out all keys at once.
@@ -130,7 +138,7 @@ from adjacent rooms, via side channels like radio waves), take steps to
 avoid location tracking when executing Glacier. Don’t carry a GPS-enabled
 smartphone with you, don’t use credit cards for purchases, etc.
 * Deliver
-keys by hand: Don’t use couriers or phones to send keys to trusted
+keys by hand: Don’t use couriers or [phones](https://www.cbsnews.com/news/60-minutes-hacking-your-phone/){: target="_blank" ._} to send keys to trusted
 associates. Hand-deliver them personally or using a trusted party.
 * Conventional personal security: Home surveillance systems, bodyguards,
 etc.

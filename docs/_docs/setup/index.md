@@ -62,11 +62,13 @@ individuals from the Bitcoin community.
   As...”
   e. Name the file “glacier.asc”.
 
-8. Download and install GnuPG , the software we’ll use for doing the
+8. Download and install
+[GnuPG](https://gnupg.org/){: target="_blank" ._},
+the software we’ll use for doing the
 <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
 data-content="
-GnuPG is the same software recommended by the  Electronic Frontier Foundation’s
-Surveillance Self Defense protocol.
+GnuPG is the same software recommended by the
+[Electronic Frontier Foundation’s Surveillance Self Defense protocol](https://ssd.eff.org/en/searchapi?keys=pgp%20install/){: target="_blank" ._}.
 ">cryptographic verification</a>.
 <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
 data-content="
@@ -81,9 +83,11 @@ but also the hosting of other software distributions used by Glacier, and such
 a breach would be quickly detected by the global community.
 ">See tech details</a>.
 
-  a. Windows: Download and install the latest available version of Gpg4win . Use
+  a. Windows: Download and install the latest available version of
+  [Gpg4win](https://www.gpg4win.org/){: target="_blank" ._}. Use
   the default options.
-  b. macOS: Download and install the latest available version of GPG Suite .
+  b. macOS: Download and install the latest available version of
+  [GPG Suite](https://gpgtools.org/){: target="_blank" ._}.
   c. Linux: GnuPG comes pre-installed with Linux distributions.
 
 9. Open a terminal window:
@@ -130,14 +134,16 @@ https://en.wikipedia.org/wiki/Digital_signature.
   The warning message is expected, and is not cause
   <a href="#" class="popovers" data-toggle="popover" data-placement="top" title=""
   data-content="
-  Technical details:  GPG was designed on the premise that public keys would be
+  Technical details:
+  [GPG was designed](https://www.gnupg.org/gph/en/manual/x334.html){: target="_blank" ._} on the premise that public keys would be
   verified as actually belonging to their owners  -- either directly, by receiving
   a key face-to-face from someone known to you, or indirectly, via cryptographic
   signature by someone whose public key you’ve already verified. The warning
   message merely indicates that you have done neither of these verifications for
   Glacier’s public key.
-  This is standard practice with software distribution,  even for major software
-  packages like Ubuntu . Although you do not have the opportunity to personally
+  This is standard practice with software distribution,
+  [even for major software packages like Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-how-to-verify-ubuntu){: target="_blank" ._}.
+  Although you do not have the opportunity to personally
   verify Glacier’s public key came from the Glacier team, you can nonetheless have
   some degree of trust in the validity of the key, to the extent you trust it was
   generated and is hosted in a secure manner, and that someone in the community

@@ -15,7 +15,8 @@ description:
   b. Close the quarantined laptops, and seal the screen shut with a tamper-resistant seal.
   c. Store the hardware somewhere where it is unlikely to be used by accident.
 4. Maintenance planning
-  a. Create a reminder for yourself in six months to execute the Maintenance Protocol . (If you don’t have a reminder system you trust, find one on the web.)
+  a. Create a reminder for yourself in six months to execute the
+  [Maintenance Protocol](../check-balance/maintenance/){: target="_blank" ._} . (If you don’t have a reminder system you trust, find one on the web.)
 5. Long-term storage of Cold Storage Information Packets
   a. As soon as possible, transfer each Cold Storage Information Packet to its secure storage location (e.g. safe deposit box).
   b. Don’t put more than one packet in long-term storage in the same building!

@@ -30,7 +30,8 @@ label (“Q1”, “Q2”, or “SETUP 1”, or “SETUP 2”). For example:
   a. Unbox laptop. Do not power it on.
   b. Put a tamper-resistant seal over the Ethernet port, if it has one.
   c. Physically remove the wireless card.
-    i. For the recommended Dell laptop, Dell’s official instructions for doing so are here . A YouTube video showing an abbreviated procedure is here .
+    i. For the recommended Dell laptop, Dell’s official instructions for doing so are [here](http://topics-cdn.dell.com/pdf/inspiron-11-3162-laptop_Service%20Manual_en-us.pdf){: target="_blank" ._} . A YouTube video showing an abbreviated procedure is
+    [here](https://www.youtube.com/watch?v=nFYXQQPoh90){: target="_blank" ._}.
     ii. For the recommended Acer laptop, the process is similar to the Dell. Note there are two cover screws hidden underneath rubber feet on the bottom of the laptop.
 
   d. After removing the wireless card, cover the ends of the internal wi-fi antennae with electrical tape.

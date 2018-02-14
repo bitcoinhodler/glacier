@@ -51,10 +51,11 @@ to get it.
 
 The protocol recommends storing copies of moderately-sensitive
 data electronically, in a “conventionally secure” manner (for example, in
-a password manager such as 1Password ). If you’re particularly concerned about
-privacy, you  can  forego electronic storage, because the protocol also stores
-copies of moderately-sensitive data in cold storage with each private key.
-However, this is not recommended.
+a password manager such as
+[1Password](https://1password.com/){: target="_blank" ._}). If you’re particularly
+concerned about privacy, you  can  forego electronic storage, because the protocol
+also stores copies of moderately-sensitive data in cold storage with each private
+key. However, this is not recommended.
 
 This means that  knowledge of  your cold storage balance will be as secure as
 access to  any accounts which have their credentials stored in your password

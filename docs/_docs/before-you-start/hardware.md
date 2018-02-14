@@ -7,50 +7,72 @@ Glacier has been written and tested around these specific equipment recommendati
 
 ### Eternally quarantined hardware: Set 1
 
-* Factory-sealed computer with 2 USB ports16 and a camera17 [Amazon: 2016
-Dell Inspiron 11.6” ]
-* Two (2) factory-sealed USB drives (2GB+) from the same manufacturer [Amazon: SanDisk Cruzer 8GB ].
+* Factory-sealed computer with 2 USB ports and a camera:
+[2016 Dell Inspiron 11.6”](http://a.co/1E6HEQA){: target="_blank" ._}
+* Two factory-sealed USB drives (2GB+) from the same manufacturer:
+[SanDisk Cruzer 8GB](http://a.co/1Us66ze){: target="_blank" ._}.
+
+We’ll be using two USB drives at the same time. If the computer has only one USB
+port, you’d need to use a USB hub, which is a separate piece of USB hardware subject
+to malware infection of its firmware.
+
+We'll use the camera for reading QR codes.
 
 ### Eternally quarantined hardware: Set 2
 
-* Factory-sealed computer from a different manufacturer, also with 2 USB ports and a camera [Amazon: Acer Aspire One Cloudbook 11”]
-* Two (2) factory-sealed USB drives (2GB+) from the same manufacturer, but a different manufacturer than the drives for Set 1 [Amazon: Verbatim 2GB ]
-Used / existing computing equipment
-* Two (2) computers with Internet connectivity, administrator access, and about
-  2GB of free disk space. Each computer must be running Windows 10, macOS, or
-  Linux.
-  One of these two computers should be a computer that you do not own (unless
-  purchased brand new), or that has spent much time on your home or office
-  network.
+* Factory-sealed computer from a different manufacturer, also with 2 USB ports
+and a camera:
+[Acer Aspire One Cloudbook 11”](http://a.co/1ZMSB3Y){: target="_blank" ._}
+* Two factory-sealed USB drives (2GB+) from the same manufacturer, but a different
+manufacturer than the drives for Set 1:
+[Verbatim 2GB](http://a.co/jdzEf8O){: target="_blank" ._}
+
+
+### Used/existing computing equipment
+
+* Two computers with Internet connectivity, administrator access, and about
+2GB of free disk space.  Each computer must be running Windows 10, macOS, or Linux
+One of these two computers should be a computer that you  do not  own (unless
+purchased brand new), or that has spent much time on your home or office network.
 * Printer
 * Smartphone with a working camera
 
 
 ### Other Equipment
 
-* Two (2) factory-sealed USB drives (2GB+) [Amazon: Verbatim 2GB ]
-* Precision screwdrivers [ Amazon ], for removing WiFi cards from laptops
-* Electrical tape [ Amazon ]
-* Casino-grade six-sided dice. [Amazon] (Regular dice are insufficient.20)
-* Faraday bag [ Amazon ]. Used to prevent smartphone malware from stealing sensitive data using radio frequencies .
-* Table fan [ Amazon ]. White noise can prevent malware on nearby devices from stealing sensitive data using sound .
-* Home safe [ Amazon ]. Consider bolting it to your floor to deter theft.
-* TerraSlate paper [ Amazon ].21 Waterproof, heat resistant, and
-tear-resistant.
-* Cardboard envelopes, for opacity [ Amazon ]
-* Tamper-resistant seals [ Amazon ]
+* Two factory-sealed USB drives (2GB+):
+[Verbatim 2GB](http://a.co/jieluaE){: target="_blank" ._}
+* [Precision screwdrivers](http://a.co/bbvj16a){: target="_blank" ._},
+for removing WiFi cards from laptops
+* [Electrical tape](http://a.co/gZZiEdA){: target="_blank" ._}
+* [Casino-grade six-sided dice](http://a.co/ghbdiak){: target="_blank" ._}.
+Regular dice are insufficient.
+* [Faraday bag](http://a.co/3wiNPLT){: target="_blank" ._}.
+Used to prevent smartphone malware from
+[stealing sensitive data using radio frequencies](https://www.usenix.org/legacy/event/sec09/tech/full_papers/vuagnoux.pdf).
+* [Table fan](http://a.co/98PrpMs){: target="_blank" ._}.
+White noise can prevent malware on nearby devices from
+[stealing sensitive data using sound](https://www.wired.com/2016/06/clever-attack-uses-sound-computers-fan-steal-data/){: target="_blank" ._}.
+* [Home safe](http://a.co/6sRoaPv){: target="_blank" ._}.
+Consider bolting it to your floor to deter theft.
+* [TerraSlate paper](http://a.co/7pk5fJN){: target="_blank" ._}.
+Waterproof, heat resistant, and tear-resistant.
+* [Cardboard envelopes](http://a.co/7jUPLMR){: target="_blank" ._}, for opacity
+* [Tamper-resistant seals](http://a.co/96KlsAl){: target="_blank" ._}
 
 ### Notes
 
 Standard software algorithms that generate random numbers, such as those used
-to generate Bitcoin private keys, are  vulnerable to exploitation , either due
-to malware or algorithmic weakness (i.e. they often provide numbers that are not
-truly random). Dice offer something closer to true randomness.
+to generate Bitcoin private keys, are
+[vulnerable to exploitation](https://bitcoin.org/en/alert/2013-08-11-android){: target="_blank" ._},
+either due to malware or algorithmic weakness (i.e. they often provide numbers that
+are not truly random). Dice offer something closer to true randomness.
 
 Casino dice are created specifically to remove any potential dice bias
 (square corners, filled in pips, low manufacturing tolerance, etc.) That’s why
 casinos use them!
 
 TerraSlate paper is extremely rugged, but you might also consider laminating the
-paper for additional protection. You’ll need a thermal laminator and laminating
-pouches.
+paper for additional protection. You’ll need a
+[thermal laminator](http://a.co/cZBN1YU){: target="_blank" ._} and
+[laminating pouches](http://a.co/ifISzje){: target="_blank" ._}.

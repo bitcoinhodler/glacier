@@ -7,7 +7,7 @@ The Maintenance Protocol is designed to minimize the risk of losing funds due to
 
 * Loss of private keys: Obviously if too many keys are compromised or lost (due to theft, damage, or misplacement), your funds are lost. It’s therefore important to know ASAP if even a single key is lost, so you can generate a replacement before more keys are lost.
 * New security threats: Glacier may contain weaknesses which are currently undiscovered -- perhaps related to attacks which are not part of the current security landscape.
-* Bit rot : The Withdrawal Protocol depends on the availability of certain software (including not just the applications themselves, but also software libraries those applications depend on), plus hardware and networks that are compatible with that software. If your funds are in storage for a long time, the withdrawal tools may become obsolete and no longer function.
+* [Bit rot](https://en.wikipedia.org/wiki/Software_rot){: target="_blank" ._}: The Withdrawal Protocol depends on the availability of certain software (including not just the applications themselves, but also software libraries those applications depend on), plus hardware and networks that are compatible with that software. If your funds are in storage for a long time, the withdrawal tools may become obsolete and no longer function.
 
 We recommend the Maintenance Protocol be executed six months after the initial deposit into cold storage, and annually thereafter.
 

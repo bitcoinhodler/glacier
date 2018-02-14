@@ -3,7 +3,7 @@ title: Transfer cold storage data to paper
 description:
 ---
 
-In this section, you’ll move the cold storage data you generated in Section I from the quarantined computing environments onto physical paper. This will be done using a combination hand transcription and QR codes .
+In this section, you’ll move the cold storage data you generated in Section I from the quarantined computing environments onto physical paper. This will be done using a combination hand transcription and [QR codes](https://en.wikipedia.org/wiki/QR_code){: target="_blank" ._}.
 
 1. Transfer the private keys to paper.
   a. Write each private key on a separate piece of TerraSlate paper ( one key per page).
@@ -52,7 +52,9 @@ In this section, you’ll move the cold storage data you generated in Section I 
   b. If the smartphone doesn’t already have a QR code reader on it, install one.
 
   Any reader is fine as long as it can read all types of QR codes, but
-  here are recommendations we’ve tested with Glacier: iOS , Android
+  here are recommendations we’ve tested with Glacier:
+  [iOS](https://itunes.apple.com/us/app/qr-reader-for-iphone/id368494609?mt=8){: target="_blank" ._},
+  [Android](https://play.google.com/store/apps/details?id=com.application_4u.qrcode.barcode.scanner.reader.flashlight&hl=en){: target="_blank" ._}.
 
 4. Transfer the cold storage address to a non-quarantined computer.
   a. On the Q1 computer, display the cold storage address as a QR code on the screen: i. In File Manager, navigate to the “Home” folder, then the “glacier” folder, and double-click “address.png”.

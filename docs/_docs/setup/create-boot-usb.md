@@ -5,7 +5,7 @@ description:
 
 Because the eternally quarantined computers cannot connect to a network, they cannot download software. We’ll be using USB drives to transfer the necessary software to them.
 
-We will prepare four (4) bootable Ubuntu USB drives. (“Bootable” means that the
+We will prepare four bootable [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu_(operating_system)){: target="_blank" ._} USB drives. (“Bootable” means that the
 Ubutnu operating system will be booted directly from the USB drive, without
 using the computer’s hard drive in any way.)
 
@@ -64,12 +64,13 @@ this document in Section I, we are omitting the GPG verification of some other
 fingerprints in the protocol. For a detailed security analysis, see the  design
 document.
 
-You can verify this is the official Ubuntu fingerprint  here , or follow
-Ubuntu’s full verification process using this guide.
+You can verify this is the official Ubuntu fingerprint
+[here](http://releases.ubuntu.com/16.04/SHA256SUMS){: target="_blank" ._},
+or follow Ubuntu’s full verification process using this guide.
 
 6. Create the SETUP 1 BOOT USB.
   a. Windows44
-    i. Download the Rufus disk utility and run it.
+    i. Download the [Rufus disk utility](https://rufus.akeo.ie/){: target="_blank" ._} and run it.
     ii. Insert the SETUP 1 BOOT USB in an empty USB slot.
     iii. In the "Device" dropdown at the top of the Rufus window, ensure the empty USB drive is selected.
     iv. Next to the text "Create a bootable disk using", select "ISO Image" in the dropdown.

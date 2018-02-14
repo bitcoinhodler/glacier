@@ -65,13 +65,14 @@ already. (See the instructions in Section III for details.)
       i. Click on the File Manager icon in the launching dock along the left side of the screen.
       ii. Find the “glacier” folder under “Home”.
       iii. Click and drag the glacier folder to the icon representing the USB drive on the left. The USB drive will look like this, but may have a different name:
-      iv. If you see an “Error while copying” pop-up, you may be suffering from this Ubuntu bug . To fix it, do the following and then retry copying the files:
+      iv. If you see an “Error while copying” pop-up, you may be suffering from
+      [this Ubuntu bug](https://bugs.launchpad.net/ubuntu/+source/nautilus/+bug/1021375){: target="_blank" ._} . To fix it, do the following and then retry copying the files:
         1. $ mv ~/.config/nautilus ~/.config/nautilus-bak
         2. Log out of Ubuntu: Click the power icon in the top right of the screen and select “logout” from the drop-down menu.
         3. Login again with user “ubuntu” and leave the password blank.
   5. Open the Glacier protocol document so that it is available for copy-pasting terminal commands.
   6. Install the remaining application software on the Q1 APP USB.
-    a. Configure our system to enable access to the software we need in Ubuntu’s “package repository”.On Ubuntu 16.04.01  there is a bug  in Ubuntu’s package manager that affects systems running off a bootable Ubuntu USB. The commands in steps a and b are a workaround.
+    a. Configure our system to enable access to the software we need in Ubuntu’s “package repository”.On Ubuntu 16.04.01  [there is a bug](https://bugs.launchpad.net/ubuntu/+source/appstream/+bug/1601971){: target="_blank" ._} in Ubuntu’s package manager that affects systems running off a bootable Ubuntu USB. The commands in steps a and b are a workaround.
       i. $ sudo mv /var/cache/app-info/xapian/default /var/cache/app-info/xapian/default_old
       ii. $ sudo mv /var/cache/app-info/xapian/default_old /var/cache/app-info/xapian/default
       iii. $ sudo apt-add-repository universe
@@ -79,7 +80,7 @@ already. (See the instructions in Section III for details.)
         1. Press Enter when prompted.
       v. $ sudo apt-get update
     b. Download and perform integrity verification59 of software available from Ubuntu’s package repository:
-      * bitcoind:  Bitcoin Core , which we’ll use for cryptography & financial operations
+      * [bitcoind](https://bitcoincore.org/){: target="_blank" ._}:  Bitcoin Core , which we’ll use for cryptography & financial operations
       * qrencode: Used for creating QR codes to move data off quarantined computers
       * zbar-tools: Used for reading QR codes to import data into quarantined computers
       ```

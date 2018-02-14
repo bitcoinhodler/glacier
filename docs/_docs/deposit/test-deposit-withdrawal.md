@@ -20,5 +20,5 @@ handling any critically sensitive cold storage data, so you can use any Internet
     i. Copy-paste your cold storage address from the C old Storage Information Page into the wallet software.
   b. Wait for the Bitcoin network to confirm the transaction at least once. The way you tell whether a transaction has been confirmed varies depending on the software or service you are using to send funds, but it should be displayed prominently.
 3. Perform a test withdrawal.
-  a. Execute the Withdrawal Protocol to withdraw the remaining balance ($6 USD - deposit fees) from cold storage to a regular Bitcoin address of your choice.
+  a. Execute the [Withdrawal Protocol](/withdrawal/execution/) to withdraw the remaining balance ($6 USD - deposit fees) from cold storage to a regular Bitcoin address of your choice.
   b. Wait for the Bitcoin network to confirm the transaction at least once. (Instructions for doing this are in the Withdrawal protocol.)

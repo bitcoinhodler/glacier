@@ -35,7 +35,7 @@ perhaps using something like the signrawtransaction Bitcoin Core
 RPC.
 
 ## BIP39 Mnemonic Support
-BIP39 supports the creation of private keys
+[BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){: target="_blank" ._} supports the creation of private keys
 encoded as an English mnemonic for ease and reliability of transcription.
 It’s not yet supported by Glacier because it’s not supported by Bitcoin
 Core.
@@ -57,9 +57,10 @@ a copy of the redeem script must be kept with each private key.
 
 Vanilla
 multisig transactions would address this, but it’s not clear if it’s
-possible to do vanilla multisig configurations with over 3 keys.102
+possible to do vanilla multisig configurations with
+[over 3 keys](https://bitcoin.stackexchange.com/questions/23893/what-are-the-limits-of-m-and-n-in-m-of-n-multisig-addresses){: target="_blank" ._}.
 Another option is to use a single Bitcoin private key, split into n pieces
-using Shamir’s Secret Sharing , which would not have any limitations on
+using [Shamir’s Secret Sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing){: target="_blank" ._}, which would not have any limitations on
 the number of keyholders, but would require additional cryptographic
 software be integrated into Glacier.
 
@@ -68,11 +69,11 @@ Many of the steps for creating the Quarantined USBs could be
 automated in a simple script.
 
 ## Security With Biased Dice
-Assess integration of this paper and/or this algorithm so that the quality of
+Assess integration of this paper and/or [this algorithm](http://pit-claudel.fr/clement/blog/generating-uniformly-random-data-from-skewed-input-biased-coins-loaded-dice-skew-correction-and-the-von-neumann-extractor/){: target="_blank" ._} so that the quality of
 our randomness is not vulnerable to dice bias.
 
 ## Entropy Quality Testing
-Use an entropy test suite such as ent to verify the quality of
+Use an entropy test suite such as [ent](http://www.fourmilab.ch/random/){: target="_blank" ._} to verify the quality of
 generated entropy before it’s used.
 
 ## Bitcoin Core Version

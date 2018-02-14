@@ -23,7 +23,7 @@ Protocol unless explicitly instructed otherwise.
   b. Open the protocol document (Glacier.pdf) within the ZIP file.
   c. Check the Release Notes (Appendix E) of the protocol document to see if there are any new versions of Glacier recommended.
   d. Whether or not you decide to upgrade, review the errata for the version of Glacier you are using at https://glacierprotocol.org/errata .
-2. Execute Section VI of the Setup Protocol to prepare your quarantined workspace.
+2. Execute [Section VI of the Setup Protocol](/setup/quarantined-workspace/) to prepare your quarantined workspace.
 3. Create entropy for private keys
 
   Creating an unguessable private key requires
@@ -36,7 +36,9 @@ Protocol unless explicitly instructed otherwise.
     ii. Roll 62 six-sided dice, shaking the dice thoroughly each roll.
     62 dice rolls corresponds to 160 bits of entropy. See the design document
     for details.
-    iii. If you are rolling multiple dice at the same time, read the dice left-to-right. This is important. Humans are  horrible at generating random data  and great at noticing patterns. Without a consistent heuristic like “read the dice left to right”, you may subconsciously read them in a non-random order (like tending to record lower numbers first). This can drastically undermine the randomness of the data, and could be exploited to guess your private keys.
+    iii. If you are rolling multiple dice at the same time, read the dice left-to-right. This is important. Humans are
+    [horrible at generating random data](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0041531){: target="_blank" ._}
+    and great at noticing patterns. Without a consistent heuristic like “read the dice left to right”, you may subconsciously read them in a non-random order (like tending to record lower numbers first). This can drastically undermine the randomness of the data, and could be exploited to guess your private keys.
     iv. Manually enter the numbers into the Quarantined Scratchpads on both quarantined computers. Put all rolls on the same line to create one line of 62 numbers . (It’s fine to add spaces for readability.)
   b. Repeat this process a total of N times, so that you have a total of N lines of numbers in each Quarantined Scratchpad. Generate computer entropy
     i. Type “COMPUTER ENTROPY” into both computers’ Quarantined Scratchpads. (This is a descriptive heading to keep your notes organized and minimize risk of error.)

@@ -37,19 +37,26 @@ Most attacks require the presence of malware, either in or near the quarantined 
 * Hardware
   * Laptop or USB hardware has “malware” in the shrinkwrapped package
 
+e.g. a  [USB JTAG exploit](http://www.itnews.com.au/news/intel-debugger-interface-open-to-hacking-via-usb-446889){: target="_blank" ._}  or chip-level backdoors (such as
+[this rootkit](https://www.wired.com/2016/06/demonically-clever-backdoor-hides-inside-computer-chip/){: target="_blank" ._}). “Malware” usually refers to software, but we’re using it here more broadly to mean “computing technology which undermines the integrity of the computing environment in which it resides.”
+
 ## Failure scenarios
 
 ### Electronic failures
 
 * Exfiltration of critically sensitive data (e.g. private keys)
-  * A Quarantined Computer leaks critically sensitive data over a side channel (possibly due to malware) AND complementary malware on a (networked or attacker-controlled) device in range steals the data
-    * Visual side channel (does not require malware on the quarantined computer, since sensitive data is displayed on the screen as part of the protocol)
-    * Acoustic side channel, if inadequately blocked (i.e. insufficient sound blockage or masking noise)( example )
-    * Radio side channel ( example 1 , example 2 , example 3 )
-    * Seismic side channel ( example )
-    * Thermal side channel ( example)
-    * Magnetic side channel ( example )
-  * Malware on a Quarantined Computer exfiltrates critically sensitive data via QR codes AND cooperating malware on the QR reading device steals the data
+  * A Quarantined Computer leaks critically sensitive data over a
+  [side channel](https://en.wikipedia.org/wiki/Side-channel_attack){: target="_blank" ._}
+  (possibly due to malware) AND complementary malware on a (networked or attacker-controlled) device in range steals the data
+    * Visual side channel (does not require malware on the quarantined computer, since sensitive data is displayed on the screen as part of the protocol).
+    If the protocol is followed, the attack surface here should be narrow, as users are instructed to block all visual side channels. However, at a minimum, they are using their smartphone for reading QR codes, and that has a camera on it.
+    * Acoustic side channel, if inadequately blocked (i.e. insufficient sound blockage or masking noise). [See example](https://www.wired.com/2016/06/clever-attack-uses-sound-computers-fan-steal-data/){: target="_blank" ._}.
+    * Radio side channel ( [example 1](https://www.usenix.org/legacy/event/sec09/tech/full_papers/vuagnoux.pdf){: target="_blank" ._} , [example 2](http://cyber.bgu.ac.il/content/how-leak-sensitive-data-isolated-computer-air-gap-near-mobile-phone-airhopper){: target="_blank" ._} , [example 3](https://www.wired.com/2015/06/radio-bug-can-steal-laptop-crypto-keys-fits-inside-pita/){: target="_blank" ._} )
+    * Seismic side channel ( [example](https://www.cc.gatech.edu/fac/traynor/papers/traynor-ccs11.pdf){: target="_blank" ._})
+    * Thermal side channel ( [example](http://cyber.bgu.ac.il/blog/bitwhisper-heat-air-gap){: target="_blank" ._})
+    * Magnetic side channel ( [example](http://fc15.ifca.ai/preproceedings/paper_14.pdf){: target="_blank" ._} )
+  * Malware on a Quarantined Computer exfiltrates critically sensitive data via QR codes AND cooperating malware on the QR reading device steals the data.
+  The risk of this scenario is negligible; unless the attacker simultaneously compromised every major smartphone QR reader with cooperating malware, any manipulation of QR codes would be quickly detected by people using non-compromised QR reader software, leading to widespread awareness and isolation of the threat. This makes it a very unattractive attack vector.
   * Critically sensitive data is leaked (intentionally or otherwise) as part of the payload of valid data (e.g. if the nonce used for a transaction signature contains bits of the private key)
 * Undetected generation of flawed sensitive data.
 (Requires compatible malware present on BOTH quarantined environments)

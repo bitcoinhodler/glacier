@@ -4,8 +4,6 @@ description: Overview of some of the key concepts leveraged by Glacier to make
   sure your Bitcoin keys are kept safe.
 ---
 
-
-
 ## Private Key
 
 Your currency balance is effectively stored in the Bitcoin
@@ -35,7 +33,8 @@ viruses out there that search computers for private keys and steal them
 One way to protect against this is by
 encrypting your private key, so even if a thief steals it, they can’t read
 it. This helps, but is not foolproof. For example, a thief might install
-keylogger malware so that they steal your password too.
+[keylogger malware](https://en.wikipedia.org/wiki/Keystroke_logging){: target="_blank" ._}
+so that they steal your password too.
 
 Online keys are
 inherently exposed to hackers. You therefore need to make sure your private

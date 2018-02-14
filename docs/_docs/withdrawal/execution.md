@@ -22,7 +22,7 @@ On any Internet-connected computer:
   c. You should see a green bar appear with a transaction ID in it. This is the
   transaction ID for your withdrawal; make a note of it.
 4. Verify the withdrawal on the public blockchain.
-  a. Go to Blockr , paste the destination address into the search bar, and press
+  a. Go to [Blockr](https://www.coinbase.com/){: target="_blank" ._} , paste the destination address into the search bar, and press
   Enter. You’ll be taken to a page that says “Bitcoin Address” at the top, with the
   destination address listed underneath.
   b. Within a couple of minutes (and often much faster), you should be able to

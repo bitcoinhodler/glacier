@@ -63,15 +63,15 @@ manufacturers. This is exceptionally unlikely.
 
 ## Bitcoin Core and GlacierScript
 
-Glacier uses the Bitcoin Core software for
-all cryptographic and financial operations, as its open source code is the
-most trustworthy. This is due to its track record of securing large amounts
+Glacier uses the [Bitcoin Core](https://bitcoincore.org/){: target="_blank" ._}
+software for all cryptographic and financial operations, as its open source code
+is the most trustworthy. This is due to its track record of securing large amounts
 of money for many years, and the high degree of code review scrutiny it has
 received.
 
 Glacier also utilizes GlacierScript, a software program that
 automates much of the manual work involved in executing the protocol.
-GlacierScript’s open source code is straightforward and extensively
+GlacierScript’s [open source code](https://github.com/GlacierProtocol/GlacierProtocol){: target="_blank" ._} is straightforward and extensively
 commented to facilitate easy review for flaws or vulnerabilities.
 
 ## Protocol Output
@@ -86,7 +86,7 @@ policy. Each packet includes the following information:
 by all private keys.
 
 Technical details: The Glacier protocol reuses Bitcoin addresses. See the
-design document  for a detailed analysis.
+[design document](https://glacierprotocol.org/releases/Glacier%20Design%20Document%20v0.9%20Beta.pdf){: target="_blank" ._}  for a detailed analysis.
 
 ## Protocol Cost
 
@@ -104,8 +104,8 @@ fraction of the time.
 
 As a free, volunteer-developed community project, there is no formal support
 channel for Glacier should you encounter any issues. However, you may be able to
-ask advice of community members on our Gitter chat room or other Bitcoin
-community forums.
+ask advice of community members on our [Gitter chat room](https://gitter.im/glacierprotocol/Lobby){: target="_blank" ._}
+or other Bitcoin community forums.
 
 ## Privacy Considerations
 
@@ -113,9 +113,13 @@ Because the Bitcoin blockchain is public, the way you route and store funds has
 privacy implications. For example, any person to whom you give your cold storage
 address (because, for example, they’re sending you funds which you want to keep
 in cold storage) can see your total cold storage balance. This is easy to do
-with many free services (e.g. Blockr ).
+with many free services (e.g.
+[Blockr](https://www.coinbase.com/){: target="_blank" ._} ).
 
-This is true not just of individuals, but entities. That is, any online wallet service which you use to send funds to cold storage can see your cold storage balance, and may deduce that it belongs to you. They may, of course, also choose to share this information with others.
+This is true not just of individuals, but entities. That is, any online wallet
+service which you use to send funds to cold storage can see your cold storage
+balance, and may deduce that it belongs to you. They may, of course, also choose
+to share this information with others.
 
 If this is a concern for you, the easiest way to keep your
 cold storage balance private from a particular entity is to route the
@@ -126,14 +130,18 @@ intermediate address provides increasing levels of obfuscation and
 uncertainty.
 
 If privacy is very important to you, you might consider using
-a service like Shapeshift to exchange your Bitcoins for an more anonymous
-cryptocurrency, such as Monero , and then exchange them back to Bitcoins.
+a service like
+[Shapeshift](https://shapeshift.io/#/coins){: target="_blank" ._}
+to exchange your Bitcoins for an more anonymous cryptocurrency, such as
+[Monero](http://monero.org/){: target="_blank" ._},
+and then exchange them back to Bitcoins.
 However, this will cost you fees, and importantly, it requires you trust the
 operator of the exchange service not to steal or lose your
 funds.
 
-This guide  gives additional detail about how to increase Bitcoin anonymity
-using Monero & Tor.
+[This guide](https://bitcoinnewsmagazine.com/how-to-use-monero-to-anonymize-bitcoin/){: target="_blank" ._}
+gives additional detail about how to increase Bitcoin anonymity using Monero &
+Tor.
 
 ## Lower-security Protocol Variants
 
@@ -157,7 +165,9 @@ connections during protocol execution, instead of purchasing new
 quarantined hardware. This fails to protect against some malware
 attacks, but provides additional savings in cost and effort.
 
-Such as an  existing infection of a laptop’s firmware , malware which overrides
+Such as an
+[existing infection of a laptop’s firmware](https://www.youtube.com/watch?v=sNYsfUNegEA){: target="_blank" ._},
+malware which overrides
 OS settings to disable wireless connectivity, or certain undiscovered
 vulnerabilities in the software used by the protocol.
 
@@ -172,4 +182,4 @@ well-resourced criminal organization) are beyond its scope.
 
 For some
 additional security precautions beyond those provided in the standard
-protocol, see Appendix A .
+protocol, see the [possible improvements to Glacier](/extend/improvements/).
