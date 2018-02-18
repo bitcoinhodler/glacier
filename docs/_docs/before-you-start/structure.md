@@ -45,7 +45,7 @@ steal your bitcoins, but it can be used to see how many bitcoins you own
 (if someone knows that the moderately sensitive data in question belongs
 to you).
 
-It does  indirectly  impact security, in that if someone knows you own a lot of
+It does indirectly impact security, in that if someone knows you own a lot of
 difficult-to-trace money, they have some incentive to rob, extort, or attack you
 to get it.
 
@@ -53,12 +53,12 @@ The protocol recommends storing copies of moderately-sensitive
 data electronically, in a “conventionally secure” manner (for example, in
 a password manager such as
 [1Password](https://1password.com/){: target="_blank" ._}). If you’re particularly
-concerned about privacy, you  can  forego electronic storage, because the protocol
+concerned about privacy, you can forego electronic storage, because the protocol
 also stores copies of moderately-sensitive data in cold storage with each private
 key. However, this is not recommended.
 
-This means that  knowledge of  your cold storage balance will be as secure as
-access to  any accounts which have their credentials stored in your password
+This means that knowledge of your cold storage balance will be as secure as
+access to any accounts which have their credentials stored in your password
 manager. For most people, this is sufficient.
 
 If you use only hardcopies, you’ll need to manually type in a large amount of
@@ -96,7 +96,7 @@ beginning of the second line.
 Proceed Carefully
 
 If you encounter
-anything  that is different from what the protocol says you should
+anything that is different from what the protocol says you should
 expect, the recommendation is that you stop and seek help unless your
 expert opinion gives you high confidence that you understand all possible
 causes and implications of the discrepancy.

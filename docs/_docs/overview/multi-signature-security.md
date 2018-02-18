@@ -96,7 +96,7 @@ be made in advance.
 
 The most failsafe way to ensure your agents will have access to your safe
 deposit box is to check with the bank. Standard estate planning legal documents
-should  allow your agent to access the box upon your incapacity, and to get into
+should allow your agent to access the box upon your incapacity, and to get into
 it upon your death. But banks can be fussy and sometimes prefer their own forms.
 
 If you have a living trust, one option may be to have your trust as the co-owner
@@ -125,7 +125,7 @@ redemption script (since losing all redemption scripts is just as bad as losing
 all keys). Redemption scripts, however, allow one to view funds. An alternate
 version of this protocol could be created using a different multisig approach
 besides P2SH transactions, which would eliminate the ability of signatories to
-view balances; see  Appendix C for details.
+view balances; see Appendix C for details.
 * **Signatory collusion**: Although possessing one key won’t allow a signatory
 to access your funds, two signatories might collude with each other to steal
 your money.
@@ -150,7 +150,7 @@ For distributed custody, we recommend a 2-of-5 withdrawal policy. The extra key
 a signatory effectively protects their key against theft or loss
 
 If you have estate planning arrangements which you are confident will allow your
-agents to access the keys in your  custody when needed, you should be fine with
+agents to access the keys in your custody when needed, you should be fine with
 4 keys instead of 5 (two keys going to trusted signatories rather than three).
 Make sure your executors and signatories know to get in touch with each other
 when needed.

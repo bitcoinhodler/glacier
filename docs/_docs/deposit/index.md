@@ -113,11 +113,11 @@ Protocol unless explicitly instructed otherwise.
     redemption script, it’s sufficient to check the first 8 characters, last 8
     characters, and a few somewhere in the middle.
 
-    There are attack vectors which could replace just a  portion  of private
+    There are attack vectors which could replace just a portion of private
     keys or a cold storage address, making the private keys easier to brute
     force, so it’s important to check them thoroughly. If we know the private keys
     and cold storage address are good, then the redemption script is almost
-    certainly good as well. And if there  are  any errors in the redemption script,
+    certainly good as well. And if there are any errors in the redemption script,
     they will be caught during the test deposit & withdrawal process later in the
     protocol; a painstaking manual verification is not required.
 

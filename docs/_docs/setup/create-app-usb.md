@@ -93,7 +93,7 @@ already. (See the instructions in Section III for details.)
       iii. Copy the contents of the apps folder to the Q1 APP USB:
         1. Click on the File Manager icon in the launching dock:
         2. Navigate to the “Home” folder.
-        3. Click and drag “apps” folder  to the icon representing
+        3. Click and drag “apps” folder to the icon representing
         the USB drive on the left panel. The USB drive will look like this, but may have a different name:
   7. Click on the USB drive icon to verify that it has the correct files. The contents should look like this
   ```

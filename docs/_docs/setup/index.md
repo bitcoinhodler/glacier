@@ -11,7 +11,7 @@ the Glacier protocol document (the one you are reading) to ensure that it
 has not been tampered with. After verifying the document, we’ll print
 a hardcopy.
 
-Printing is important, because a verified  electronic  copy will not be
+Printing is important, because a verified electronic copy will not be
 accessible at all times during protocol execution due to reboots and other
 changes to the computing environment. Printing a hardcopy ensures there is
 always a verified copy of the document available.
@@ -44,11 +44,11 @@ Technical details: There’s a chicken-and-egg problem here, in that this docume
 is giving instructions for how to verify itself. Any attacker that compromised
 this document could also compromise these instructions so that the verification
 (erroneously) passes. There’s no way to prevent this, unless a reader is familiar
-with the document  before  the compromise and recognizes that the verification
+with the document before the compromise and recognizes that the verification
 instructions have changed. (This is why we don’t just include a direct download
 link to the public key -- if an attacker changed the link, it would be easy
 for people not to notice.)
-In the unfortunate event we  legitimately  need to change the verification
+In the unfortunate event we legitimately need to change the verification
 instructions (i.e. to publish a new public key, or change the means of obtaining
 the existing key), we’ll first disseminate a public announcement, signed at a
 minimum with our personal keys, and hopefully with the keys of well-known
@@ -75,7 +75,7 @@ data-content="
 Technical details: Note that we are foregoing verification of the integrity of
 GnuPG itself. Verification requires having access to a pre-existing, trusted
 installation of GnuPG, and for many Glacier users, this will not be easy to
-come by. If you  do  have access to a trusted installation of GnuPG, and
+come by. If you do have access to a trusted installation of GnuPG, and
 understand how to do the verification process, we encourage you to do so.
 The risk of an unverified PGP installation is relatively small, since an
 attacker would have to compromise not just the hosting of GPG distributions,
@@ -147,7 +147,7 @@ https://en.wikipedia.org/wiki/Digital_signature.
   verify Glacier’s public key came from the Glacier team, you can nonetheless have
   some degree of trust in the validity of the key, to the extent you trust it was
   generated and is hosted in a secure manner, and that someone in the community
-  may have noticed and raised an alarm if it  were surreptitiously changed by an
+  may have noticed and raised an alarm if it were surreptitiously changed by an
   attacker.
   ">for alarm</a>.
 

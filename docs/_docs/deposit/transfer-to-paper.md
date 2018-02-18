@@ -14,7 +14,7 @@ In this section, you’ll move the cold storage data you generated in Section I 
       1. Use care when transcribing “o” (lower-case “o”). Note that private keys do not contain “O” (upper-case “o”) or “0” (number zero).
       2. Use care when transcribing “1” (number one). Note that private keys do
       not contain "I" (uper case "i") or "l" (lower-case "L")
-      3. Use care to distinguish between "t" and "+" (private keys don not contain  plus signs)
+      3. Use care to distinguish between "t" and "+" (private keys don not contain plus signs)
       4. Use care to distinguish between "2" and "Z"
       5. Use care to distinguish between "5" and "S"
       5. Use care to distinguish between "6" and "b"
@@ -58,7 +58,7 @@ In this section, you’ll move the cold storage data you generated in Section I 
 
 4. Transfer the cold storage address to a non-quarantined computer.
   a. On the Q1 computer, display the cold storage address as a QR code on the screen: i. In File Manager, navigate to the “Home” folder, then the “glacier” folder, and double-click “address.png”.
-  b. Use the smartphone’s QR code reader to read the . When the  is
+  b. Use the smartphone’s QR code reader to read the . When the is
   successfully read, the smartphone should display the text cold storage address
   c. Verify the cold storage address on the smartphone matches the cold storage address in the Quarantined Scratchpad.
 
@@ -69,9 +69,9 @@ In this section, you’ll move the cold storage data you generated in Section I 
 
 5. Repeat the previous step for the redemption script , stored in “redemption.png.”
 
-  When comparing the redemption script shown on the smartphone to the redemption script  in the Quarantined Scratchpad, it’s sufficient to check the first 8 characters, the last 8 characters, and a handful of characters somewhere in the middle.
+  When comparing the redemption script shown on the smartphone to the redemption script in the Quarantined Scratchpad, it’s sufficient to check the first 8 characters, the last 8 characters, and a handful of characters somewhere in the middle.
 6. Power down the smartphone and return it to the Faraday bag.
-7. Shut down both quarantined computers entirely. As a precaution against  side
+7. Shut down both quarantined computers entirely. As a precaution against side
 channel attacks , the quarantined computers should not be active except when they
 absolutely need to be.
   ```
@@ -93,7 +93,7 @@ The recommended Acer laptop may require you to hold down the power button for se
   such as a “Secure Note” in 1Password or a comparable password
   manager. Because the Cold Storage Information Page contains
   moderately-sensitive data, there are some privacy considerations with keeping and
-  electronic copy of it. See the  Sensitive Data  subsection for details.
+  electronic copy of it. See the Sensitive Data subsection for details.
   f. Print N copies of the Cold Storage Information Page.
   g. Shut down the computer. (It has a camera, and you will be working with critically sensitive data in a moment.)
 9. Prepare Cold Storage Information Packets

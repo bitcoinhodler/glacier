@@ -22,8 +22,8 @@ On any Internet-connected computer:
   b. You’ll be taken to a page that says “Bitcoin Address” at the top, with your cold storage address listed underneath.
   c. Click the “Unspent Outputs” link. The page will show a list of transaction IDs
   (in horizontal gray bars) and their corresponding amounts (in green boxes).
-  Each transaction ID corresponds to a deposit you made, the  remainder  of a deposit
-  you made after doing a partial withdrawal, or a deposit  someone else  made to your
+  Each transaction ID corresponds to a deposit you made, the remainder of a deposit
+  you made after doing a partial withdrawal, or a deposit someone else made to your
   cold storage address.
   If you’re taken to a page that says “No free outputs to spend”, this indicates a
   zero balance at the address. Verify you pasted the address correctly.

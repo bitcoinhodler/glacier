@@ -136,7 +136,7 @@ This step is important. Failing to execute it properly creates a substantial sec
     iii. Verify the raw signed transaction on the smartphone matches the signed transaction data in the Quarantined Scratchpad. You only need to verify the first 16 characters, last 16 characters, and a few somewhere in the middle.
     iv. If it does not match, do not proceed. Try using a different QR reader application or restarting the Withdrawal Protocol. Seek assistance if discrepancies persist.
     v. Use the smartphone to send the raw signed transaction to yourself using a messaging app which you’ll be able to access from a laptop.
-6. Shut down both quarantined computers entirely. As a precaution against  side
+6. Shut down both quarantined computers entirely. As a precaution against side
 channel attacks , the quarantined computers should not be active except when they
 absolutely need to be.
 ```

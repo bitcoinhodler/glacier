@@ -23,7 +23,7 @@ Quarantined OS USBs for this -- they’re eternally quarantined, so they need to
 be permanently unplugged from their Setup Computer the moment they are created.)
 * Second, it will be harder for any malware infections on a Setup Computer’s
 default OS to undermine a Quarantined USB setup process (the malware would
-first  have to propagate itself to the Non-Quarantined OS USB).
+first have to propagate itself to the Non-Quarantined OS USB).
 
 1. Perform the following steps on your SETUP 1 computer.
 2. If you are not already reading this document on the SETUP 1 computer, open a
@@ -61,7 +61,7 @@ a fingerprint. It’s sufficient to check the first 8 characters, last
 
 Technical details: Because you verified the checksum & checksum signature for
 this document in Section I, we are omitting the GPG verification of some other
-fingerprints in the protocol. For a detailed security analysis, see the  design
+fingerprints in the protocol. For a detailed security analysis, see the design
 document.
 
 You can verify this is the official Ubuntu fingerprint
@@ -122,7 +122,7 @@ or follow Ubuntu’s full verification process using this guide.
   i. If this is your first time using Ubuntu, note:
     1. You can copy-paste text in most applications (e.g. Firefox) by pressing
     Ctrl-C or Ctrl-V.
-    2. You can copy-paste  text in a terminal window by pressing Ctrl-Shift-C or Ctrl-Shift-V.
+    2. You can copy-paste text in a terminal window by pressing Ctrl-Shift-C or Ctrl-Shift-V.
   ii. Put Ubuntu on the SETUP BOOT 1 USB.
     1. Open the Ubuntu search console by clicking the purple circle/swirl icon in the upper-left corner of the screen.
     2. Type “startup disk creator” in the text box that appears
@@ -148,7 +148,7 @@ or follow Ubuntu’s full verification process using this guide.
     Technical details: In order to avoid detection, it’s conceivable that malware
     might wait until a USB drive is in the process of being ejected (and all
     integrity checks presumably completed) before infecting the USB. Ejecting and
-    re-inserting the USB before  integrity checking is a simple workaround to
+    re-inserting the USB before integrity checking is a simple workaround to
     defend against this.
     ">re-insert it</a>.
     3. Wait 10 seconds for the operating system to recognize the USB.

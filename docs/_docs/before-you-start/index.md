@@ -41,14 +41,14 @@ your sensitive data (e.g. private keys), but in subverting the process of
 generating your sensitive data so it can be more easily guessed by a third
 party. We call this “flawed data.”
 
-For example, a variant of the  Trojan.Bitclip attack  which replaces keys
+For example, a variant of the Trojan.Bitclip attack which replaces keys
 displayed on your screen (or keys stored in your clipboard) with insecure keys.
 
 Because we are generating our data in
 eternally quarantined environments, any malware infection attempting this is
 unlikely to have come from your other computers -- it would likely have
 already been present when the quarantined system arrived from the
-manufacturer. For example, the  Lenovo rootkit or this Dell firmware malware
+manufacturer. For example, the Lenovo rootkit or this Dell firmware malware
 infection.
 
 The way to defeat these attacks is to detect them before
