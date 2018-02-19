@@ -14,7 +14,7 @@ already. (See the instructions in Section III for details.)
   a. The instruction to plug a Quarantined App USB into your Setup computer should raise a red flag for you, because you should never plug a quarantined USB into anything other than the quarantined computer it is designated for! This setup process is the ONE exception.
 3. Press Ctrl-Alt-T to open a terminal window.
 4. Install the Glacier document and GlacierScript on the Q1 APP USB.
-  a. Download the latest full release of Glacier ( not just the protocol document) at https://glacierprotocol.org/releases .
+  a. Download the latest full release of Glacier ( not just the protocol document) at https://glacierprotocol.org/releases.
   b. Unpack the Glacier ZIP file into a staging area.
     i. When the download starts, Firefox will ask you if you want to open the ZIP file with Archive Manager. Click OK. When the ZIP file download completes, it will be opened with Archive Manager.
     ii. There will be a single entry in a list named “GlacierProtocol- version-here” , where version-here is replaced with the current version number (like “v1.0”). Click on that and then click the “Extract” button.
@@ -25,7 +25,7 @@ already. (See the instructions in Section III for details.)
 
   If you are ever using Glacier in the future and notice that this step has changed (or that this warning has been removed), there is a security risk. Stop and seek assistance.
 
-    i. Access Glacier’s Keybase profile at https://keybase.io/glacierprotocol .
+    i. Access Glacier’s Keybase profile at https://keybase.io/glacierprotocol.
     ii. Click the string of letters and numbers next to the key icon.
     iii. In the pop-up that appears, locate the link reading “this key”.
     iv. Right-click the link and select “Save Link As...”
@@ -80,7 +80,7 @@ already. (See the instructions in Section III for details.)
         1. Press Enter when prompted.
       v. $ sudo apt-get update
     b. Download and perform integrity verification59 of software available from Ubuntu’s package repository:
-      * [bitcoind](https://bitcoincore.org/){: target="_blank" ._}:  Bitcoin Core , which we’ll use for cryptography & financial operations
+      * [bitcoind](https://bitcoincore.org/){: target="_blank" ._}:  Bitcoin Core, which we’ll use for cryptography & financial operations
       * qrencode: Used for creating QR codes to move data off quarantined computers
       * zbar-tools: Used for reading QR codes to import data into quarantined computers
       ```

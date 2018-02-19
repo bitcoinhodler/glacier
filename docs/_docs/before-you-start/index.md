@@ -6,7 +6,7 @@ description:
 This section
 establishes a basic understanding of the Glacier protocol in order to
 facilitate its execution. For more background on the protocol’s design, see
-the Glacier design document .
+the Glacier design document.
 
 As described previously, the Glacier
 protocol involves putting bitcoins in cold storage, using multisignature
@@ -22,7 +22,7 @@ Quarantined hardware means
 we drastically limit the ways in which a piece of hardware interfaces with
 the outside world in order to prevent the transmission of sensitive data
 (e.g. private keys) or harmful data (e.g. malware). We consider all
-interfaces -- network, USB, printer, and so on -- because a ny of them
+interfaces -- network, USB, printer, and so on -- because any of them
 might be used to transmit malware or private keys.
 
 Eternally quarantined
@@ -147,7 +147,7 @@ Tor.
 
 If you are willing to accept lower security for lower cost, you can do so with only slight modifications:
 
-1. Perform this protocol using only one quarantined computer. Glacier protocol
+1. **Perform this protocol using only one quarantined computer**. Glacier protocol
 repeats all operations on two computers to detect defects or tampering in
 the key generation process. However, this is costly and adds significantly
 to the labor required to execute the protocol. The risks it mitigates are
@@ -159,7 +159,7 @@ stack (and needing the second setup computer) and skip the process of
 re-generating and verifying keys & transactions on the parallel hardware
 stack.
 
-2. Use existing hardware. An even lower-security variant is to use nothing
+2. **Use existing hardware**. An even lower-security variant is to use nothing
 but existing laptops you already possess, disabling all network
 connections during protocol execution, instead of purchasing new
 quarantined hardware. This fails to protect against some malware

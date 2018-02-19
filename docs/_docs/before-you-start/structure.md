@@ -5,23 +5,23 @@ description:
 
 The overall Glacier protocol consists of several distinct subprotocols:
 
-* Setup: Prepares hardware,
+* **Setup**: Prepares hardware,
 and downloads and verifies needed software & documentation.
-* Deposit:
-For securely storing bitcoins.
-* Withdrawal: For transferring some or
-all of your stored funds to another bitcoin address.
-* Viewing: For
-viewing the balance of your funds in secure storage.
-* Maintenance: For
-ensuring funds in cold storage remain accessible and secure. Sensitive
-Data
+* **Deposit**: For securely storing bitcoins.
+* **Withdrawal**: For transferring some or all of your stored funds to another
+bitcoin address.
+* **Viewing**: For viewing the balance of your funds in secure storage.
+* **Maintenance**: For ensuring funds in cold storage remain accessible and
+secure.
 
-Critically-sensitive data (e.g. private keys) will be highlighted
-in red, like this: critically-sensitive-data-here .
-Critically sensitive
-data can be used by thieves to to steal your bitcoins. If you follow the
-protocol precisely, your critically sensitive data will remain secure.
+## Sensitive Data
+
+Critically-sensitive data (e.g. private keys) will be highlighted in red,
+like this: <span class="danger">critically-sensitive-data-here</span>.
+
+Critically sensitive data can be used by thieves to to steal your bitcoins. If
+you follow the protocol precisely, your critically sensitive data will remain
+secure.
 
 Do
 not do anything with critically sensitive data that the protocol does not
@@ -37,7 +37,7 @@ device
 
 Moderately-sensitive data (e.g. a cold storage address or redemption
 script) will be highlighted in yellow, like this:
-moderately-sensitive-data-here .
+<span class="warning">moderately-sensitive-data-here</span>.
 
 Moderately sensitive data impacts
 privacy, but does not directly impact security. It cannot be used to
@@ -68,7 +68,7 @@ cold storage.
 ### Terminal Usage
 
 Many protocol steps involve
-typing commands into a terminal window . Working in a terminal window is
+typing commands into a terminal window. Working in a terminal window is
 analogous to working under the hood of a car. It allows you to give the
 computer more precise commands than you can through the regular
 interface.
@@ -82,7 +82,7 @@ $ could be copy-pasted into a terminal window "
 ```
 
 The $ at the beginning
-of the line represents a terminal prompt , indicating readiness for user
+of the line represents a terminal prompt, indicating readiness for user
 input. The actual prompt varies depending on your operating system and its
 configuration; it may be $ , > , or something else. Usually the terminal
 will show additional information (such as a computer name, user ID and/or

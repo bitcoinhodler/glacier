@@ -29,7 +29,7 @@ first time and do not plan on executing the Deposit or Withdrawal protocol now, 
     ii. Put portable computing devices in the Faraday bag and seal the bag.
     iii. Unplug desktop computers.
 2. Put your Q1 BOOT USB into an open slot in your Q1 computer.
-3. Boot off the USB drive. If you’ve forgotten how, refer to the procedure in Section IV .
+3. Boot off the USB drive. If you’ve forgotten how, refer to the procedure in Section IV.
 4. Plug the Q1 APP USB into the Q1 computer
 5. Copy the software from the Q1 computer's RAM disk.
   a. Click the File Manager icon from the launchpad on the left side of the screen.

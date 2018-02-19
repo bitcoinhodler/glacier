@@ -59,9 +59,9 @@ If you like, you may review the
 [Glacier design document](https://glacierprotocol.org/releases/Glacier%20Design%20Document%20v0.9%20Beta.pdf){: target="_blank" ._}
 for details on the technical design.
 
-# Background
+## Background
 
-## Self-Managed Storage vs. Online
+# Self-Managed Storage vs. Online
 
 Let’s start by assessing whether Glacier is right for you.
 
@@ -133,7 +133,7 @@ to pay (in money and time) for security.
 
 Glacier focuses exclusively on self-managed storage.
 
-## Glacier vs. Hardware Wallets
+### Glacier vs. Hardware Wallets
 
 Many people who choose
 self-managed storage (as opposed to an online storage service) use “hardware

@@ -35,7 +35,7 @@ On the Q1 computer:
   Scratchpad. If you make a transcription error, it will be easier to identify and
   fix in the scratchpad compared to a situation where you transcribed it directly
   into GlacierScript.
-    i. Private keys
+    i. <span class="danger">Private keys</span>
     ii. Fee rate
 
     Transcribe the private keys with reasonable care, but painstaking verification is not critical. (If you make an error, the withdrawal will simply fail, prompting you to fix your transcription error.)
@@ -48,7 +48,7 @@ On the Q1 computer:
 
       1. If you're not sure if it's 4000 characters, you can try the copy-paste method. If it's too long (or if there is some other problem with it), you'll receive a "TX decode" error (code 22).
     ii. You can do this by opening a new TextEdit window, pasting the raw unspent transaction into it, and saving the file.
-    iii. Make sure to save it to the folder containing glacierscript.py .
+    iii. Make sure to save it to the folder containing glacierscript.py.
   f. Begin construction of the withdrawal transaction:
   ```
   $ cd ~/glacier
@@ -91,16 +91,16 @@ On the Q1 computer:
   ```
 
 3. Verify transaction construction
-  a. On the Q2 computer, repeat step 2 above.
-    i. Note: it is important to enter the private keys in the same order on each of the quarantined computers.
+  a. **On the Q2 computer**, repeat step 2 above.
+    i. Note: it is important to enter the **private keys** in the same order on each of the quarantined computers.
 
-  b. Verify that the “Transaction fingerprint” output by GlacierScript is identical
+  b. Verify that the <span class="warning">"Transaction fingerprint"</span> output by GlacierScript is identical
   on both computers. It is possible for malware to exfiltrate bits of the private
   key in the transaction signature by choosing the nonce in a particular way.
   Bitcoin Core generates the nonce deterministically, as a function of a hash of the
   transaction, so we can detect the presence of any environment-specific malware by
   comparing the transaction generated in each quarantined environment.
-  c. If there are any discrepancies, do not proceed. Restart the Withdrawal Protocol
+  c. **If there are any discrepancies, do not proceed**. Restart the Withdrawal Protocol
   and seek assistance if discrepancies persist.
 4. Visually hide all critically sensitive data.
 
@@ -110,19 +110,19 @@ steal sensitive data if it is not visually hidden.
 
 This step is important. Failing to execute it properly creates a substantial security risk.
 
-  a. Put your Cold Storage Information Packets out of sight -- this prevents a
+  a. Put your <span class="danger">Cold Storage Information Packets</span> out of sight -- this prevents a
   smartphone camera from accidentally seeing them.
-  b. Delete all text from the Quarantined Scratchpad on the Q1 and Q2 computers.
+  b. Delete all text from the Quarantined Scratchpad on the **Q1 and Q2 computers**.
   c. On the Q1 computer:
-    i. Copy-paste the raw signed transaction from the terminal window to the
+    i. Copy-paste the <span class="warning">raw signed transaction</span> from the terminal window to the
     Quarantined Scratchpad.
-    ii. Enable line wrapping so the entire raw signed transaction can be seen.
+    ii. Enable line wrapping so the entire <span class="warning">raw signed transaction</span> can be seen.
       1. With the Quarantined Scratchpad window active, go to the menu bar at the top of the screen.
       2. Select Edit.
       3. Select Preferences.
       4. Select the View tab.
       5. Uncheck “Do not split words over two lines”.
-  d. Clear the terminal windows on the Q1 and Q2 computers. $ clear
+  d. Clear the terminal windows on the **Q1 and Q2** computers. $ clear
 5. Extract the signed transaction from the quarantined environment.
   a. QR reader setup
     i. Remove a smartphone from the Faraday bag and turn it on.
@@ -130,14 +130,14 @@ This step is important. Failing to execute it properly creates a substantial sec
     [iOS](https://itunes.apple.com/us/app/qr-reader-for-iphone/id368494609?mt=8){: target="_blank" ._},
     [Android](https://play.google.com/store/apps/details?id=com.application_4u.qrcode.barcode.scanner.reader.flashlight&hl=en){: target="_blank" ._}.
   b. Transfer the signed transaction data to a non-quarantined computer.
-    i. On the Q1 computer, display the raw signed transaction as a QR code on the screen:
+    i. **On the Q1 computer**, display the <span class="warning">raw signed transaction</span> as a QR code on the screen:
       1. In File Manager, navigate to the “Home” folder, then the “glacier” folder, and double-click “transaction.png”.
-    ii. Use the smartphone’s QR code reader to read the QR code. When the QR code is successfully read, the smartphone should display the raw signed transaction .
-    iii. Verify the raw signed transaction on the smartphone matches the signed transaction data in the Quarantined Scratchpad. You only need to verify the first 16 characters, last 16 characters, and a few somewhere in the middle.
-    iv. If it does not match, do not proceed. Try using a different QR reader application or restarting the Withdrawal Protocol. Seek assistance if discrepancies persist.
-    v. Use the smartphone to send the raw signed transaction to yourself using a messaging app which you’ll be able to access from a laptop.
-6. Shut down both quarantined computers entirely. As a precaution against side
-channel attacks , the quarantined computers should not be active except when they
+    ii. Use the smartphone’s QR code reader to read the QR code. When the QR code is successfully read, the smartphone should display the <span class="warning"> raw signed transaction</span> .
+    iii. Verify the <span class="warning">raw signed transaction</span> on the smartphone matches the signed transaction data in the Quarantined Scratchpad. You only need to verify the first 16 characters, last 16 characters, and a few somewhere in the middle.
+    iv. **If it does not match, do not proceed**. Try using a different QR reader application or restarting the Withdrawal Protocol. Seek assistance if discrepancies persist.
+    v. Use the smartphone to send the <span class="warning">raw signed transaction</span> to yourself using a messaging app which you’ll be able to access from a laptop.
+6. Shut down **both** quarantined computers entirely. As a precaution against side
+channel attacks, the quarantined computers should not be active except when they
 absolutely need to be.
 ```
 $ sudo shutdown now

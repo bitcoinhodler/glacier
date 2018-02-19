@@ -51,7 +51,7 @@ address.
 
 ## Side channel security
 * Faraday cage: Use a [Faraday cage](https://en.wikipedia.org/wiki/Faraday_cage){: target="_blank" ._} to protect against electromagnetic side channels
-( example ). Faraday cages can be [self-built](https://www.thesurvivalistblog.net/build-your-own-faraday-cage-heres-how/){: target="_blank" ._} or [professionally built](https://www.faradaycages.com/server-rooms){: target="_blank" ._}.
+( example). Faraday cages can be [self-built](https://www.thesurvivalistblog.net/build-your-own-faraday-cage-heres-how/){: target="_blank" ._} or [professionally built](https://www.faradaycages.com/server-rooms){: target="_blank" ._}.
 * No QR
 codes: Reading and relaying QR codes to a printer requires a networked
 device, such as a smartphone, which could potentially receive data from

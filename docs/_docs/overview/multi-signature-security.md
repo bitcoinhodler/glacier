@@ -35,7 +35,7 @@ extended period, during which time your safe is looted.
 
 To address these
 issues, Bitcoin provides a way to secure funds with a set of private keys,
-such that some of the keys (but not necessarily all ) are required to
+such that some of the keys (but not necessarily all) are required to
 withdraw funds. For example, you might secure your bitcoins with 3 keys but
 only need any 2 of those keys to withdraw funds. (This example is known as
 a “2-of-3” withdrawal policy.)

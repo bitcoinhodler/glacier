@@ -22,7 +22,7 @@ permission to install new software on. We’ll refer to this computer as the
 2. Review the errata for the version of Glacier you are using at
 https://glacierprotocol.org/errata.
 3. Download the latest full release of Glacier ( not just the protocol document)
-at https://glacierprotocol.org/releases .
+at https://glacierprotocol.org/releases.
 4. If your browser does not automatically extract the ZIP file contents into a
 folder within your downloads directory, do so.
 5. Rename the folder to “glacier.”
@@ -55,7 +55,7 @@ minimum with our personal keys, and hopefully with the keys of well-known
 individuals from the Bitcoin community.
 ">seek assistance</a>.
 
-  a. Access Glacier’s Keybase profile at https://keybase.io/glacierprotocol .
+  a. Access Glacier’s Keybase profile at https://keybase.io/glacierprotocol.
   b. Click the string of letters and numbers next to the key icon.
   c. In the pop-up that appears, locate the link reading “this key”.
   d. Right-click the link and select “Save Link As...” or “Download Linked File

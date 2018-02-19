@@ -74,3 +74,16 @@ body {
 .navbar-form .has-feedback .form-control-feedback{
   top:10px
 }
+
+/* Highlight text as the original Glacier paper */
+span.danger, span.warning {
+  color: #eeeeee;
+  padding: 2px;
+  border-radius: 2px;
+}
+span.danger {
+  background-color: $brand-danger;
+}
+span.warning {
+  background-color: $brand-warning;
+}

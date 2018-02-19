@@ -12,17 +12,17 @@ In this first section, we’ll gather physical hardcopies of all information nee
 On any Internet-connected computer:
 
 1. If this is not your first time working with Glacier:
-  a. Use a networked computer to access the latest full release of Glacier ( not just the protocol document) at https://glacierprotocol.org/releases .
+  a. Use a networked computer to access the latest full release of Glacier ( not just the protocol document) at https://glacierprotocol.org/releases.
   b. Open the protocol document (Glacier.pdf) within the ZIP file.
   c. Check the Release Notes (Appendix E) of the protocol document to see if there are any new versions of Glacier recommended.
   d. Whether or not you decide to upgrade, review the errata for the version of Glacier you are using at https://glacierprotocol.org/errata.
-2. Open your electronic copy of the Cold Storage Information Page (see Section II of the Deposit Protocol for details).
+2. Open your electronic copy of the <span class="warning">Cold Storage Information Page</span> (see Section II of the Deposit Protocol for details).
 3. Identify the blockchain transactions associated with the funds you’d like to withdraw.
-  a. Go to Blockchain.info , paste your cold storage address into the search bar, and press Enter.
-  b. You’ll be taken to a page that says “Bitcoin Address” at the top, with your cold storage address listed underneath.
-  c. Click the “Unspent Outputs” link. The page will show a list of transaction IDs
+  a. Go to Blockchain.info, paste your <span class="warning">cold storage address</span> into the search bar, and press Enter.
+  b. You’ll be taken to a page that says “Bitcoin Address” at the top, with your <span class="warning">cold storage address</span> listed underneath.
+  c. Click the “Unspent Outputs” link. The page will show a list of <span class="warning">transaction IDs</span>
   (in horizontal gray bars) and their corresponding amounts (in green boxes).
-  Each transaction ID corresponds to a deposit you made, the remainder of a deposit
+  Each <span class="warning">transaction ID</span> corresponds to a deposit you made, the remainder of a deposit
   you made after doing a partial withdrawal, or a deposit someone else made to your
   cold storage address.
   If you’re taken to a page that says “No free outputs to spend”, this indicates a
@@ -34,9 +34,9 @@ On any Internet-connected computer:
   include the transaction ID once. GlacierScript will include all UTXOs in every
   supplied transaction ID.
   e. Copy-paste these transaction IDs to a temporary scratchpad for reference.
-  f. These will be referred to as unspent transaction IDs .
+  f. These will be referred to as unspent transaction IDs.
 4. Get raw data for blockchain transactions.
-  a. For each unspent transaction ID from your temporary scratchpad:
+  a. For each <span class="warning">unspent transaction ID</span> from your temporary scratchpad:
     i. Go to the following URL, substituting the unspent transaction ID in the specified place: https://blockchain.info/tx/ transaction-id-here?format=hex Example page contents:
     ```
     01000000016847105309a8604c7e4f5773d0a16c45248acce057dab62e
@@ -48,33 +48,33 @@ On any Internet-connected computer:
     3e80607f40be4547780315b688ac00000000
     ```
 
- ii. This entire page be referred to as a raw unspent transaction .
- iii. Copy-paste the raw unspent transaction next to the unspent transaction ID in your temporary scratchpad.
+ ii. This entire page be referred to as a <span class="warning">raw unspent transaction</span>.
+ iii. Copy-paste the <span class="warning">raw unspent transaction</span> next to the unspent <span class="warning">transaction ID</span> in your temporary scratchpad.
 5. Create QR codes
-  a. Find an online QR code generator, such as http://goqr.me .
-  b. For each unspent transaction ID in your temporary scratchpad:
-    i. Copy-paste the raw unspent transaction into the QR code generator.
+  a. Find an online QR code generator, such as http://goqr.me.
+  b. For each unspent <span class="warning">transaction ID</span> in your temporary scratchpad:
+    i. Copy-paste the <span class="warning">raw unspent transaction</span> into the QR code generator.
 
     NOTE:  Some raw unspent transactions are too long to be converted into a single QR code -- or the QR code may be such high resolution that some QR code readers may struggle to read it.
 
     In these cases, you will need to split the data into multiple QR codes, and manually splice them back together on the quarantined computer after decoding each QR codes. Make sure there is no extra whitespace (i.e. a space, or pressing “Enter”) at the end of any copy-pastes! This can change the QR code.
 
-    ii. Print out the resulting QR code . (If printing from goqr.me, just print the first page.)
+    ii. Print out the resulting <span class="warning"> QR code</span>. (If printing from goqr.me, just print the first page.)
 
     iii. Write “raw unspent transaction” somewhere on the printout.
   c. Repeat step (b) above for other needed information:
-    i. Cold storage address (from the Cold Storage Information Page )
-    ii. Redemption script (from the Cold Storage Information Page )
-    iii. Destination address to which you will be withdrawing the funds
+    i. Cold storage address (from the <span class="warning">Cold Storage Information Page</span>)
+    ii. Redemption script (from the <span class="warning">Cold Storage Information Page</span>)
+    iii. <span class="warning">Destination address</span> to which you will be withdrawing the funds
 
 
-      1. Carefully transcribe the destination address by hand on the printed page with its QR code. (This will facilitate verification in the quarantined environment.)
+      1. **Carefully** transcribe the destination address by hand on the printed page with its QR code. (This will facilitate verification in the quarantined environment.)
       2. Double-check that the transcribed address is correct.
-      3. If you are sending funds directly to another party with whom you do not have high trust, be mindful of the risk of transaction malleability fraud .
+      3. If you are sending funds directly to another party with whom you do not have high trust, be mindful of the risk of transaction malleability fraud.
 6. Gather other information.
   a. Make sure you have the necessary number of Cold Storage Information Packets on hand (you’ll need the private keys).
-    i. For the recommended 2-of-n multisignature withdrawal policy , you’ll need any 2 Cold Storage Information Packets.
-    ii. If you are performing an initial test withdrawal, you’ll need all Cold Storage Information packets .
+    i. For the recommended 2-of-n multisignature withdrawal policy, you’ll need any 2 <span class="warning">Cold Storage Information Packets</span>.
+    ii. If you are performing an initial test withdrawal, you’ll need all Cold <span class="danger">Storage Information packets</span>.
 
     b. Get transaction fee market data.
     The operators of the Bitcoin network require a (very small) fee for processing

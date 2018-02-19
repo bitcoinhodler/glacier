@@ -95,7 +95,7 @@ or follow Ubuntu’s full verification process using this guide.
         b. The first line of the section’s SIZE column should reflect the
         capacity of the USB drive.
       6. Make a note of the device identifier.
-        a. The device identifier is the part of the new section header that comes before (external, physical) (for example /dev/disk2 ).
+        a. The device identifier is the part of the new section header that comes before (external, physical) (for example /dev/disk2).
     iii. Put Ubuntu on the SETUP 1 BOOT USB.
       1. First, unmount the usb $ diskutil unmountDisk USB-device-identifier-here
       2. Enter the following command, making sure to use the correct device identifier; using the wrong one could overwrite your hard drive!
@@ -127,7 +127,7 @@ or follow Ubuntu’s full verification process using this guide.
     1. Open the Ubuntu search console by clicking the purple circle/swirl icon in the upper-left corner of the screen.
     2. Type “startup disk creator” in the text box that appears
     3. Click on the “Startup Disk Creator” icon that appears.
-    4. The “Source disc image” panel should show the .iso file you downloaded.
+    4. The “Source disc image” panel should show the.iso file you downloaded.
     If it does not, click the “Other” button and find it in the
     folder you downloaded it to.
     5. In the “Disk to use” panel, you should see two lines. They may vary from
@@ -135,7 +135,7 @@ or follow Ubuntu’s full verification process using this guide.
     have a device identifier in it, highlighted in the example below.
     ```
     Generic Flash Disk (/dev/sda)
-    Kanguru Flash Trust ( /dev/sdb )
+    Kanguru Flash Trust ( /dev/sdb)
     ```
     6. Select the line containing SETUP 1 BOOT USB.49 Make note of the disk identifier (e.g. /dev/sdb).
     7. Click “Make Startup Disk” and then click “Yes”.
@@ -174,7 +174,7 @@ or follow Ubuntu’s full verification process using this guide.
     ii. Press your laptop’s key sequence to bring up the
     boot device selection menu. (Some PCs may offer a boot device selection
     menu; see below.)
-      1. PC: Varies by manufacturer, but is often F12 or Del . The timing may vary as well; try pressing it when the boot logo appears.
+      1. PC: Varies by manufacturer, but is often F12 or Del. The timing may vary as well; try pressing it when the boot logo appears.
         a. On the recommended Dell laptop, press F12. You should see
         b. The recommended Acer laptop does not have a boot menu. See below for instructions.
       2. Mac: When you hear the startup chime, p ress and hold Option (⌥) .
