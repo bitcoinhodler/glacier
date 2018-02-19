@@ -75,6 +75,12 @@ body {
   top:10px
 }
 
+/* Code snippets shouldn't break, they should scroll */
+pre>code {
+  overflow-x: auto;
+  white-space: pre;
+}
+
 /* Highlight text as the original Glacier paper */
 span.danger, span.warning {
   color: #eeeeee;
