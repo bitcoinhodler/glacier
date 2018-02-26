@@ -5,7 +5,7 @@ description:
 
 This section
 establishes a basic understanding of the Glacier protocol in order to
-facilitate its execution. For more background on the protocol’s design, see
+facilitate its execution. For more background on the protocol's design, see
 the Glacier design document.
 
 As described previously, the Glacier
@@ -39,7 +39,7 @@ essentially useless for anything else but executing this protocol.
 There is a class of attacks which rely not on stealing
 your sensitive data (e.g. private keys), but in subverting the process of
 generating your sensitive data so it can be more easily guessed by a third
-party. We call this “flawed data.”
+party. We call this "flawed data."
 
 For example, a variant of the Trojan.Bitclip attack which replaces keys
 displayed on your screen (or keys stored in your clipboard) with insecure keys.
@@ -71,7 +71,7 @@ received.
 
 Glacier also utilizes GlacierScript, a software program that
 automates much of the manual work involved in executing the protocol.
-GlacierScript’s [open source code](https://github.com/GlacierProtocol/GlacierProtocol){: target="_blank" ._} is straightforward and extensively
+GlacierScript's [open source code](https://github.com/GlacierProtocol/GlacierProtocol){: target="_blank" ._} is straightforward and extensively
 commented to facilitate easy review for flaws or vulnerabilities.
 
 ## Protocol Output
@@ -80,9 +80,9 @@ The end result of the Glacier protocol is a set of paper information
 packets, one for each private key needed for the multisignature withdrawal
 policy. Each packet includes the following information:
 
-* One private key -- an alphanumeric string used to secure the funds
-* The cold storage address -- an alphanumeric string designating the virtual “location” of the funds
-* The “redemption script” -- an additional code needed to access funds, shared
+* One **private key** -- an alphanumeric string used to secure the funds
+* The **cold storage address** -- an alphanumeric string designating the virtual "location" of the funds
+* The **"redemption script"** -- an additional code needed to access funds, shared
 by all private keys.
 
 Technical details: The Glacier protocol reuses Bitcoin addresses. See the
@@ -111,7 +111,7 @@ or other Bitcoin community forums.
 
 Because the Bitcoin blockchain is public, the way you route and store funds has
 privacy implications. For example, any person to whom you give your cold storage
-address (because, for example, they’re sending you funds which you want to keep
+address (because, for example, they're sending you funds which you want to keep
 in cold storage) can see your total cold storage balance. This is easy to do
 with many free services (e.g.
 [Blockr](https://www.coinbase.com/){: target="_blank" ._} ).
@@ -166,7 +166,7 @@ quarantined hardware. This fails to protect against some malware
 attacks, but provides additional savings in cost and effort.
 
 Such as an
-[existing infection of a laptop’s firmware](https://www.youtube.com/watch?v=sNYsfUNegEA){: target="_blank" ._},
+[existing infection of a laptop's firmware](https://www.youtube.com/watch?v=sNYsfUNegEA){: target="_blank" ._},
 malware which overrides
 OS settings to disable wireless connectivity, or certain undiscovered
 vulnerabilities in the software used by the protocol.
@@ -175,7 +175,7 @@ These modifications are left as an exercise to the reader.
 
 ## Out of scope
 
-There’s always more one could do to increase security. While
+There's always more one could do to increase security. While
 Glacier is designed to provide strong protection for almost everyone, some
 situations (e.g. being the focus of a targeted attack by a sophisticated,
 well-resourced criminal organization) are beyond its scope.

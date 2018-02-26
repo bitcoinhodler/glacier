@@ -8,12 +8,12 @@ Glacier has been written and tested around these specific equipment recommendati
 ### Eternally quarantined hardware: Set 1
 
 * Factory-sealed computer with 2 USB ports and a camera:
-[2016 Dell Inspiron 11.6”](http://a.co/1E6HEQA){: target="_blank" ._}
+[2016 Dell Inspiron 11.6"](http://a.co/1E6HEQA){: target="_blank" ._}
 * Two factory-sealed USB drives (2GB+) from the same manufacturer:
 [SanDisk Cruzer 8GB](http://a.co/1Us66ze){: target="_blank" ._}.
 
-We’ll be using two USB drives at the same time. If the computer has only one USB
-port, you’d need to use a USB hub, which is a separate piece of USB hardware subject
+We'll be using two USB drives at the same time. If the computer has only one USB
+port, you'd need to use a USB hub, which is a separate piece of USB hardware subject
 to malware infection of its firmware.
 
 We'll use the camera for reading QR codes.
@@ -22,7 +22,7 @@ We'll use the camera for reading QR codes.
 
 * Factory-sealed computer from a different manufacturer, also with 2 USB ports
 and a camera:
-[Acer Aspire One Cloudbook 11”](http://a.co/1ZMSB3Y){: target="_blank" ._}
+[Acer Aspire One Cloudbook 11"](http://a.co/1ZMSB3Y){: target="_blank" ._}
 * Two factory-sealed USB drives (2GB+) from the same manufacturer, but a different
 manufacturer than the drives for Set 1:
 [Verbatim 2GB](http://a.co/jdzEf8O){: target="_blank" ._}
@@ -69,10 +69,10 @@ either due to malware or algorithmic weakness (i.e. they often provide numbers t
 are not truly random). Dice offer something closer to true randomness.
 
 Casino dice are created specifically to remove any potential dice bias
-(square corners, filled in pips, low manufacturing tolerance, etc.) That’s why
+(square corners, filled in pips, low manufacturing tolerance, etc.) That's why
 casinos use them!
 
 TerraSlate paper is extremely rugged, but you might also consider laminating the
-paper for additional protection. You’ll need a
+paper for additional protection. You'll need a
 [thermal laminator](http://a.co/cZBN1YU){: target="_blank" ._} and
 [laminating pouches](http://a.co/ifISzje){: target="_blank" ._}.

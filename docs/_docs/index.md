@@ -13,12 +13,12 @@ to funds by a single individual.
 * **Large amounts of money ($100,000+)**: Glacier thoroughly considers corner
 cases such as obscure vectors for malware infection, personal estate
 planning, human error resulting in loss of funds, and so on.
-Even if your Bitcoin holdings are more modest, it’s worth considering using
+Even if your Bitcoin holdings are more modest, it's worth considering using
 Glacier. If Bitcoin proves successful as a global currency, it will appreciate
 10x (or much more) in the coming years. Security will become increasingly
 important if your holdings appreciate and Bitcoin becomes a more attractive
 target for thieves.
-The “Protocol Overview” section also describes some lower-security, lower-cost
+The "Protocol Overview" section also describes some lower-security, lower-cost
 approaches to self-managed storage that may be more appropriate for smaller
 amounts of funds.
 * **Long-term storage**: Glacier not only considers the Bitcoin security
@@ -41,7 +41,7 @@ you want high security cold storage, you may prefer to read
 ## Trusting this protocol
 
 Funds secured using Glacier can only be as secure as its design.
-Here’s what you can trust about this protocol:
+Here's what you can trust about this protocol:
 * **Expert advisors**: The development of Glacier was guided with input from
 Bitcoin technology and security experts. See our advisor list.
 * **Open source**: GlacierScript, the Glacier companion software, is open
@@ -61,9 +61,9 @@ for details on the technical design.
 
 ## Background
 
-# Self-Managed Storage vs. Online
+### Self-Managed Storage vs. Online
 
-Let’s start by assessing whether Glacier is right for you.
+Let's start by assessing whether Glacier is right for you.
 
 There is no such thing as perfect security. There are only degrees of security,
 and those degrees come at a cost (in time, money, convenience, etc.) So the
@@ -89,7 +89,7 @@ to be stolen. In contrast, self-managed storage can be done with no network
 exposure.
 3. **Under constant attack**: Online services can be hacked by attackers from
 anywhere in the world. People know these services store lots of funds, which
-makes them much larger targets. If there’s a flaw in their security, it’s more
+makes them much larger targets. If there's a flaw in their security, it's more
 likely to be found and exploited.
 4. **Internal theft**: They have to protect against internal theft from a large
 group of employees & contractors.
@@ -97,7 +97,7 @@ group of employees & contractors.
 or under pressure from governments) to seize your funds.
 There is historical precedent for this, even if funds are not suspected of
 criminal involvement. In 2010,
-[Cyprus unilaterally seized many bank depositors’ funds ](https://www.theguardian.com/world/2013/mar/25/cyprus-bailout-deal-eu-closes-bank){: target="_blank" ._}
+[Cyprus unilaterally seized many bank depositors' funds ](https://www.theguardian.com/world/2013/mar/25/cyprus-bailout-deal-eu-closes-bank){: target="_blank" ._}
 to cope with an economic crisis. In 1933, the US abruptly
 [demanded citizens surrender almost all gold they owned to the government](https://en.wikipedia.org/wiki/Executive_Order_6102){: target="_blank" ._}.
 Regardless of how one views the political desirability of these particular
@@ -107,10 +107,10 @@ Furthermore,Bitcoin still operates in a political and legal grey zone, which
 increases these political risks.
 
 Some online wallet services have insurance to cover losses, although that
-insurance doesn’t protect against all of these scenarios, and often has limits
+insurance doesn't protect against all of these scenarios, and often has limits
 on the amount insured.
 
-These risks are not theoretical. Many online services have lost customers’ funds
+These risks are not theoretical. Many online services have lost customers' funds
 (and not reimbursed them), including
 [Mt. Gox](https://www.bloomberg.com/news/articles/2014-02-28/mt-gox-exchange-files-for-bankruptcy){: target="_blank" ._},
 [Bitfinex](http://www.bbc.com/news/technology-37009319){: target="_blank" ._},
@@ -118,17 +118,17 @@ and many more.
 
 Recently, some providers are rolling out services which are a hybrid
 of an online service and self-managed storage. Examples include
-[Coinbase’s multisig vault](https://www.coinbase.com/vault){: target="_blank" ._}
+[Coinbase's multisig vault](https://www.coinbase.com/vault){: target="_blank" ._}
 and [Green Address](https://greenaddress.it/en/){: target="_blank" ._}.
 The design of these services
 significantly reduces (though does not eliminate) the risks described above.
 
 However, they also require some care and technical competence to securely
-manage the electronic “keys” which provide access to funds.
+manage the electronic "keys" which provide access to funds.
 
 Many people do use online or hybrid solutions to store sizeable amounts of
 money. We recommend self-managed storage for large investments, but ultimately
-it’s a personal decision based on your risk tolerance and costs you’re willing
+it's a personal decision based on your risk tolerance and costs you're willing
 to pay (in money and time) for security.
 
 Glacier focuses exclusively on self-managed storage.
@@ -136,28 +136,28 @@ Glacier focuses exclusively on self-managed storage.
 ### Glacier vs. Hardware Wallets
 
 Many people who choose
-self-managed storage (as opposed to an online storage service) use “hardware
-wallets” such as the
+self-managed storage (as opposed to an online storage service) use "hardware
+wallets" such as the
 [Trezor](https://trezor.io/){: target="_blank" ._},
 [Ledger](https://www.ledgerwallet.com/){: target="_blank" ._},
 and [KeepKey](https://www.keepkey.com/){: target="_blank" ._}
 to store their bitcoins. While these are great products that provide strong security,
-Glacier is intended to offer an even higher level of protection than today’s
+Glacier is intended to offer an even higher level of protection than today's
 hardware wallets can provide.
 
 The primary security consideration is that
 all hardware wallets today operate via a physical USB link to a regular
 computer. While they employ extensive safeguards to prevent any sensitive
 data (such as private keys) from being transmitted over this connection,
-it’s possible that an undiscovered vulnerability could be exploited by
+it's possible that an undiscovered vulnerability could be exploited by
 malware to steal private keys from the device.
 
 For details on this and other security considerations, see the
-“No Hardware Wallets” section of the
+"No Hardware Wallets" section of the
 [Glacier design document](https://glacierprotocol.org/releases/Glacier%20Design%20Document%20v0.9%20Beta.pdf).
 
 As with online multisig
 vaults, many people do use hardware wallets to store sizeable amounts of
 money. We personally recommend Glacier for large investments, but ultimately
-it’s a personal decision based on your risk tolerance and costs you’re
+it's a personal decision based on your risk tolerance and costs you're
 willing to pay (in money and time) for security.

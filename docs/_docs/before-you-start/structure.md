@@ -50,9 +50,9 @@ difficult-to-trace money, they have some incentive to rob, extort, or attack you
 to get it.
 
 The protocol recommends storing copies of moderately-sensitive
-data electronically, in a “conventionally secure” manner (for example, in
+data electronically, in a "conventionally secure" manner (for example, in
 a password manager such as
-[1Password](https://1password.com/){: target="_blank" ._}). If you’re particularly
+[1Password](https://1password.com/){: target="_blank" ._}). If you're particularly
 concerned about privacy, you can forego electronic storage, because the protocol
 also stores copies of moderately-sensitive data in cold storage with each private
 key. However, this is not recommended.
@@ -61,7 +61,7 @@ This means that knowledge of your cold storage balance will be as secure as
 access to any accounts which have their credentials stored in your password
 manager. For most people, this is sufficient.
 
-If you use only hardcopies, you’ll need to manually type in a large amount of
+If you use only hardcopies, you'll need to manually type in a large amount of
 gibberish data, by hand, with no errors, every time you withdraw funds from
 cold storage.
 
@@ -77,14 +77,13 @@ Commands to be entered into a terminal window will be
 displayed in a fixed-width font like this:
 
 ```
-$ echo "everything after the
-$ could be copy-pasted into a terminal window "
+$ echo "everything after the $ could be copy-pasted into a terminal window"
 ```
 
-The $ at the beginning
+The `$` at the beginning
 of the line represents a terminal prompt, indicating readiness for user
 input. The actual prompt varies depending on your operating system and its
-configuration; it may be $ , > , or something else. Usually the terminal
+configuration; it may be `$` , `>` , or something else. Usually the terminal
 will show additional information (such as a computer name, user ID and/or
 folder name) preceding every prompt.
 
@@ -96,11 +95,11 @@ beginning of the second line.
 Proceed Carefully
 
 If you encounter
-anything that is different from what the protocol says you should
-expect, the recommendation is that you stop and seek help unless your
+**anything that is different** from what the protocol says you should
+expect, **the recommendation is that you stop and seek help** unless your
 expert opinion gives you high confidence that you understand all possible
 causes and implications of the discrepancy.
 
-In general, follow the
+**In general, follow the
 protocol carefully, keep track of what step you are on, and double-check
-your work. Any errors or deviations can undermine your security.
+your work**. Any errors or deviations can undermine your security.

@@ -6,7 +6,7 @@ description: Glacier uses multiple keys to protect your Bitcoins. This makes it
 ---
 
 Central to our security protocols is
-a technique called “multisignature security.” You’ll need a quick primer on
+a technique called "multisignature security." You'll need a quick primer on
 this topic to understand the Glacier protocol.
 
 ## Regular Private Keys are Risky
@@ -38,19 +38,19 @@ issues, Bitcoin provides a way to secure funds with a set of private keys,
 such that some of the keys (but not necessarily all) are required to
 withdraw funds. For example, you might secure your bitcoins with 3 keys but
 only need any 2 of those keys to withdraw funds. (This example is known as
-a “2-of-3” withdrawal policy.)
+a "2-of-3" withdrawal policy.)
 
 The keys are then stored in different
 locations, so someone who gets access to one key will not automatically
 have access to the others. Sometimes, a key is entrusted to the custody of
-another person, known as a “signatory.”
+another person, known as a "signatory."
 
 This approach of using multiple
-keys is known as “multisignature security.” The “signature” part of
-“multisignature” comes from the process of using a private key to access
-bitcoins, which is referred to as “signing a transaction.” Multisignature
+keys is known as "multisignature security." The "signature" part of
+"multisignature" comes from the process of using a private key to access
+bitcoins, which is referred to as "signing a transaction." Multisignature
 security is analogous to a bank requiring signatures from multiple people
-(for example, any 2 of a company’s 3 designated officers) to access funds in
+(for example, any 2 of a company's 3 designated officers) to access funds in
 an account.
 
 ## How Does Multisignature Security Help?
@@ -88,7 +88,7 @@ The keys will be distributed as follows:
 * The remaining three in safe deposit boxes or [private vaults](https://www.google.com/search?q=private+safe+deposit+box){: target="_blank" ._} at
 different locations
 
-It’s important to think about estate planning -- making
+It's important to think about estate planning -- making
 arrangements for your designated agents to be able to access your funds when
 you are dead (e.g. for distribution to your heirs) or incapacitated (e.g. to
 pay medical bills). This usually requires significant legal arrangements to
@@ -106,15 +106,15 @@ the box.
 ### Option 2: Distributed custody of keys
 
 Another option is to distribute some of your
-keys to individuals who you trust (“signatories”). This can offer some
+keys to individuals who you trust ("signatories"). This can offer some
 advantages:
 
 * **Availability**: If you live in a rural area, there may not be many vaults
 or safe deposit boxes that are practical to get to.
 * **Ease of setup**: It may be simpler to distribute keys to signatories than
 to find available vaults, travel to them, and set up accounts.
-* **Ease of estate planning**: You don’t need to make complicated legal
-arrangements for your signatories to access your funds. They’ll have the keys
+* **Ease of estate planning**: You don't need to make complicated legal
+arrangements for your signatories to access your funds. They'll have the keys
 they need to do so.
 
 However, there are significant drawbacks:
@@ -126,7 +126,7 @@ all keys). Redemption scripts, however, allow one to view funds. An alternate
 version of this protocol could be created using a different multisig approach
 besides P2SH transactions, which would eliminate the ability of signatories to
 view balances; see Appendix C for details.
-* **Signatory collusion**: Although possessing one key won’t allow a signatory
+* **Signatory collusion**: Although possessing one key won't allow a signatory
 to access your funds, two signatories might collude with each other to steal
 your money.
 * **Signatory reliability**: A signatory may fail to store the key securely, or
@@ -135,7 +135,7 @@ they may lose it.
 expose them to the risk of targeted physical theft.
 * **Kidnapping risk**: If you anticipate traveling in
 [high-crime areas with kidnapping risk](http://www.nytimes.com/2012/05/03/business/kidnapping-becomes-a-growing-travel-risk.html){: target="_blank" ._},
-your funds will be at greater risk because you’ll
+your funds will be at greater risk because you'll
 have the ability to access them remotely (by contacting your signatories and
 asking for their keys).
 Financially-motivated kidnapping hinges on your ability to access funds to give

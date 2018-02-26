@@ -23,7 +23,7 @@ Changes
 
 * Enabled HTTPS on website for improved security of protocol distribution
 * Added Windows support to Setup Protocol
-* Required the second Setup Computer to be “distinct” (e.g. preferably one not previously owned by the Glacier user) to minimize the chance of identical malware on both Setup Computers propagating to the quarantined environments (and generating an identical flawed key in both environments)
+* Required the second Setup Computer to be "distinct" (e.g. preferably one not previously owned by the Glacier user) to minimize the chance of identical malware on both Setup Computers propagating to the quarantined environments (and generating an identical flawed key in both environments)
 * Revised online wallet section to describe a wider variety of market options
 
 ## Version 0.1 Alpha: January 24, 2017

@@ -5,7 +5,6 @@ description:
 
 
 ## Don't store electronic copy of Cold Storage Information Page
-
 Glacier recommends stores an electronic copy of the Cold Storage
 Information Page for easy copy-pasting for subsequent deposits or
 withdrawals. However, this is slightly less secure & complicated -- and
@@ -37,11 +36,10 @@ RPC.
 ## BIP39 Mnemonic Support
 [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki){: target="_blank" ._} supports the creation of private keys
 encoded as an English mnemonic for ease and reliability of transcription.
-It’s not yet supported by Glacier because it’s not supported by Bitcoin
+It's not yet supported by Glacier because it's not supported by Bitcoin
 Core.
 
 ## Sign Withdrawal Transactions With Individual Signatures
-
 Bringing
 multiple private keys together in the same physical location for the
 Withdrawal Protocol entails risk (they could be physically stolen). It
@@ -50,17 +48,17 @@ a time, probably by bringing a QR-encoded physical hardcopy of the
 partially-signed transaction to the storage location of each private
 key.
 
-## Consider Shamir’s Secret Sharing or Vanilla Multisig vs. P2SH Transactions
+## Consider Shamir's Secret Sharing or Vanilla Multisig vs. P2SH Transactions
 Glacier currently uses P2SH transactions. This allows all
-signatories storing private keys to view the user’s balance, because
+signatories storing private keys to view the user's balance, because
 a copy of the redeem script must be kept with each private key.
 
 Vanilla
-multisig transactions would address this, but it’s not clear if it’s
+multisig transactions would address this, but it's not clear if it's
 possible to do vanilla multisig configurations with
 [over 3 keys](https://bitcoin.stackexchange.com/questions/23893/what-are-the-limits-of-m-and-n-in-m-of-n-multisig-addresses){: target="_blank" ._}.
 Another option is to use a single Bitcoin private key, split into n pieces
-using [Shamir’s Secret Sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing){: target="_blank" ._}, which would not have any limitations on
+using [Shamir's Secret Sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing){: target="_blank" ._}, which would not have any limitations on
 the number of keyholders, but would require additional cryptographic
 software be integrated into Glacier.
 
@@ -74,7 +72,7 @@ our randomness is not vulnerable to dice bias.
 
 ## Entropy Quality Testing
 Use an entropy test suite such as [ent](http://www.fourmilab.ch/random/){: target="_blank" ._} to verify the quality of
-generated entropy before it’s used.
+generated entropy before it's used.
 
 ## Bitcoin Core Version
 Pinning Currently, we download Bitcoin Core on to the Quarantined App
