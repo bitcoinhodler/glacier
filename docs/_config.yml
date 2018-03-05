@@ -13,18 +13,14 @@ git_edit_address: https://github.com/joaofnfernandes/glacier/edit/master/docs
 twitter_address: https://twitter.com/glacierprotocol
 gitter_address: https://gitter.im/glacierprotocol/lobby
 
-#theme: jekyll-theme-cayman
 bootswatch: paper
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
 collections:
   docs:
     permalink: /:collection/:path/
