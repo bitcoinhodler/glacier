@@ -15,12 +15,19 @@ gitter_address: https://gitter.im/glacierprotocol/lobby
 
 #theme: jekyll-theme-cayman
 bootswatch: paper
+
+gems:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 collections:
   docs:
-    permalink: /:collection/:path
+    permalink: /:collection/:path/
     output: true
 defaults:
   - scope:

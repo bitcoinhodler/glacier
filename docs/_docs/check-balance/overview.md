@@ -1,6 +1,7 @@
 ---
 title: Check your balance
 description:
+redirect_from: /docs/check-balance/
 ---
 
 The Viewing Protocol is a simple procedure for viewing your balance of funds currently in one cold storage address.

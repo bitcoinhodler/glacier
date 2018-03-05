@@ -1,6 +1,7 @@
 ---
 title: Generate cold storage data
 description:
+redirect_from: /docs/deposit/
 ---
 
 The Deposit Protocol is used to transfer bitcoins into high-security cold storage. If you have previously used the

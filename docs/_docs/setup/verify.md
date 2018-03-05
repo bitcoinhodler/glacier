@@ -1,6 +1,7 @@
 ---
 title: Verify and print protocol document
 description:
+redirect_from: /docs/setup/
 ---
 
 The Setup Protocol is used to prepare hardware, and download and verify needed

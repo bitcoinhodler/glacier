@@ -1,6 +1,7 @@
 ---
 title: Extend Glacier security
 description:
+redirect_from: /docs/extend/
 ---
 
 Glacier is designed to provide strong protection for almost everyone -- even
@@ -159,7 +160,7 @@ present.
 from adjacent rooms, via side channels like radio waves), take steps to
 avoid location tracking when executing Glacier. Don't carry a GPS-enabled
 smartphone with you, don't use credit cards for purchases, etc.
-* **Deliver keys by hand**: Don't use couriers or [phones](https://www.cbsnews.com/news/60-minutes-hacking-your-phone/){: target="_blank" ._} to 
+* **Deliver keys by hand**: Don't use couriers or [phones](https://www.cbsnews.com/news/60-minutes-hacking-your-phone/){: target="_blank" ._} to
 send keys to trusted associates. Hand-deliver them personally or using a trusted party.
 * **Conventional personal security**: Home surveillance systems, bodyguards,
 etc.

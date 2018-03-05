@@ -1,6 +1,7 @@
 ---
 title: Preparation
 description:
+redirect_from: /docs/withdrawal/
 ---
 
 The Withdrawal Protocol is used to transfer bitcoins out of high-security

@@ -1,6 +1,7 @@
 ---
 title: Protocol overview
 description:
+redirect_from: /docs/before-you-start/
 ---
 
 This section

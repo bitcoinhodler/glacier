@@ -2,6 +2,9 @@
 title: About Glacier
 description: Glacier is a step-by-step protocol for long-term storage of
   Bitcoins, in an offline and secure way.
+redirect_from:
+  - /docs/
+  - /docs/overview/
 ---
 
 Glacier is a step-by-step protocol for storing bitcoins in a highly secure

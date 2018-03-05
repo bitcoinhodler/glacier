@@ -1,6 +1,7 @@
 ---
 title: License
 description:
+redirect_from: /docs/contribute/
 ---
 
 Copyright 2017 by James Hogan and Jacob Lyles.
