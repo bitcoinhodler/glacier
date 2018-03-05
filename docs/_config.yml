@@ -5,6 +5,7 @@ show_dir_listing: false
 permalink: pretty
 url: "https://joaofnfernandes.github.io/glacier"
 baseurl: "/glacier"
+timezone: America/Los_Angeles
 
 # Github urls
 git_address: https://github.com/joaofnfernandes/glacier
