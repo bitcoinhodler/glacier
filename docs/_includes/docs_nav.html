@@ -1,5 +1,5 @@
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-{% for section in site.data.docs_toc %}
+  {% for section in site.data.docs_toc %}
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -13,7 +13,7 @@
         {% for item in section.docs %}
           {% assign item_url = item | prepend:"/docs/" %}
           {% assign p = site.docs | where:"url", item_url | first %}
-          <a class="list-group-item {% if item_url == page.url %}active{% endif %}" href="{{ item_url | remove_first:'/index' | prepend: site.baseurl | append:'/' }}">{{ p.title }}</a>
+          <a class="list-group-item {% if item_url == page.url %}active{% endif %}" href="{{ p.url | prepend: site.baseurl | remove: "/index" | append: "/" }}">{{ p.title }}</a>
         {% endfor %}
       </ul>
     </div>
