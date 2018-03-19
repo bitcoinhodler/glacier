@@ -1,6 +1,7 @@
 ---
 title: Create boot USBs
-description:
+description: Learn how to prepare your USB drives for Glacier, the
+  step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
 Because the eternally quarantined computers cannot connect to a network, they

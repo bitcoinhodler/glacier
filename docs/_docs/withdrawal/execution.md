@@ -1,6 +1,7 @@
 ---
 title: Transaction execution and verification
-description:
+description: Learn how to withdrawal Bitcoin using Glacier, the step-by-step
+  protocol for storing bitcoins in a highly secure way
 ---
 
 On any Internet-connected computer:

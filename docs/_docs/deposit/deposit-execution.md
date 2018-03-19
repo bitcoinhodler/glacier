@@ -1,6 +1,7 @@
 ---
 title: Deposit execution
-description:
+description: Learn how to deposit Bitcoin using Glacier, the
+  step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
 Depositing funds requires the Internet, and does not require handling any

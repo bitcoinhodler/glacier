@@ -1,6 +1,7 @@
 ---
 title: Test deposit and withdrawal
-description:
+description: Learn how to test withdrawing Bitcoin from Glacier, the
+  step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
 It's important to make sure everything is working properly before proceeding.

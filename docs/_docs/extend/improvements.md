@@ -1,6 +1,7 @@
 ---
 title: Possible improvements to Glacier
-description:
+description: Here's a list of improvements that can be made to Glacier, the
+  step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
 

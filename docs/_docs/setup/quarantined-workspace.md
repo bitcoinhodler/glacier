@@ -1,6 +1,7 @@
 ---
 title: Prepare quarantined workspaces
-description:
+description: Learn how to prepare your quarantined hardware for Glacier, the
+  step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
 This section is meant to be done immediately before executing the Deposit or

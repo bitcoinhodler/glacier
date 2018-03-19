@@ -1,6 +1,7 @@
 ---
 title: Generate cold storage data
-description:
+description: Learn how to generate cold storage data to use with Glacier, the
+  step-by-step protocol for storing bitcoins in a highly secure way
 redirect_from: /docs/deposit/
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Verify and print protocol document
-description:
+description: Learn how to set up for Glacier, the step-by-step protocol for
+  storing bitcoins in a highly secure way
 redirect_from: /docs/setup/
 ---
 

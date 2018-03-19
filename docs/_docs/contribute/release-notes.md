@@ -1,6 +1,7 @@
 ---
 title: Release notes
-description:
+description: Check the release notes for Glacier, the
+  step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
 ## Version 0.91: Upgrade Guidance

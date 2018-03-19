@@ -1,10 +1,12 @@
 ---
 title: Check your balance
-description:
+description: Learn how to check your balance using Glacier, the
+  step-by-step protocol for storing bitcoins in a highly secure way
 redirect_from: /docs/check-balance/
 ---
 
-The Viewing Protocol is a simple procedure for viewing your balance of funds currently in one cold storage address.
+The Viewing Protocol is a simple procedure for viewing your balance of funds
+currently in one cold storage address.
 
 1. Open your electronic copy of the
 <span class="warning">Cold Storage Information Page</span> (see Section II

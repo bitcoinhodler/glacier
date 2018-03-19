@@ -1,6 +1,7 @@
 ---
 title: Design document
-description:
+description: Here you can find the design documents behind Glacier, the
+  step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
 If you want to learn more about the security considerations for Glacier,

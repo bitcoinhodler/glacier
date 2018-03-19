@@ -1,6 +1,7 @@
 ---
 title: Hardware required
-description:
+description: Learn what hardware you need to acquire for using Glacier, the
+  step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
 Glacier has been written and tested around these specific equipment recommendations.

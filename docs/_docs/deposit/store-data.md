@@ -1,6 +1,7 @@
 ---
 title: Store cold storage data
-description:
+description: Learn how to store cold storage data with Glacier, the
+  step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
 1. Shut down any nearby computers or smartphones, or other devices with cameras.

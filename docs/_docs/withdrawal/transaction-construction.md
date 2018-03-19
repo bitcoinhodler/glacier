@@ -1,6 +1,7 @@
 ---
 title: Transaction construction
-description:
+description: Learn how to withdrawal Bitcoin using Glacier, the step-by-step
+  protocol for storing bitcoins in a highly secure way
 ---
 
 In this section, we construct a "signed transaction" in our quarantined
@@ -17,7 +18,7 @@ to prepare your quarantined workspace.
             $ zbarcam
             ```
             A window will appear with your laptop's video feed.
-            
+
         2. For each QR code you printed out in Section I:
             1. Hold the QR code up to the webcam.
             2. When a green square appears around the QR code on the video

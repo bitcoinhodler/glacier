@@ -1,6 +1,7 @@
 ---
 title: Transfer cold storage data to paper
-description:
+description: Learn how to transfer your cold storage data to paper using
+  Glacier, the step-by-step protocol for storing bitcoins in a highly secure way
 ---
 
 In this section, you'll move the cold storage data you generated in Section I
