@@ -42,9 +42,9 @@ using different hardware in each quarantined environment, use different
 software (including a non-Linux-derived OS and a different Bitcoin wallet),
 different smartphones (and different smartphone software, i.e. QR code
 readers). Different software stacks eliminate the risk that a software bug or
-vulnerability may generate a flawed key. See the design document for details
-on why this risk is small enough to justify leaving it unaddressed in the
-formal protocol.
+vulnerability may generate a flawed key. See the
+[design document](../design-doc/overview.md) for details on why this risk is
+small enough to justify leaving it unaddressed in the formal protocol.
 * **Dedicated pair of environments for each private key**: Use extra
 environments such that each environment only touches one key both when
 generating keys and signing transactions. Expand the definition of

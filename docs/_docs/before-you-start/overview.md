@@ -7,7 +7,7 @@ redirect_from: /docs/before-you-start/
 This section
 establishes a basic understanding of the Glacier protocol in order to
 facilitate its execution. For more background on the protocol's design, see
-the Glacier design document.
+the Glacier [design document](../design-doc/overview.md).
 
 As described previously, the Glacier
 protocol involves putting bitcoins in cold storage, using multisignature
@@ -87,7 +87,7 @@ policy. Each packet includes the following information:
 by all private keys.
 
 Technical details: The Glacier protocol reuses Bitcoin addresses. See the
-[design document](https://glacierprotocol.org/releases/Glacier%20Design%20Document%20v0.9%20Beta.pdf){: target="_blank" ._}  for a detailed analysis.
+[design document](../design-doc/overview.md) for a detailed analysis.
 
 ## Protocol Cost
 

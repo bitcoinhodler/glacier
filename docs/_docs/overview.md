@@ -57,8 +57,7 @@ under open licenses (Creative Commons for the document, MIT license for the
 code), enabling others to publish their own revisions. Inferior alternatives
 will tend to lose popularity over time.
 
-If you like, you may review the
-[Glacier design document](https://glacierprotocol.org/releases/Glacier%20Design%20Document%20v0.9%20Beta.pdf){: target="_blank" ._}
+If you like, you may review the [design document](../design-doc/overview.md)
 for details on the technical design.
 
 ## Background
@@ -155,9 +154,7 @@ it's possible that an undiscovered vulnerability could be exploited by
 malware to steal private keys from the device.
 
 For details on this and other security considerations, see the
-"No Hardware Wallets" section of the
-[Glacier design document](https://glacierprotocol.org/releases/Glacier%20Design%20Document%20v0.9%20Beta.pdf).
-
+"No Hardware Wallets" section of the [design document](../design-doc/overview.md)
 As with online multisig
 vaults, many people do use hardware wallets to store sizeable amounts of
 money. We personally recommend Glacier for large investments, but ultimately

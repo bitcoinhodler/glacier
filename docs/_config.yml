@@ -23,10 +23,16 @@ bootswatch: paper
 # make sure you only use plugins Github pages supports
 # https://pages.github.com/versions/
 plugins:
+  - jekyll-relative-links
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Config for jekyll-relative-links plugin
+relative_links:
+  enabled: true
+  collections: true
 
 collections:
   docs:
