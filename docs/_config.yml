@@ -7,7 +7,7 @@ url: "https://joaofnfernandes.github.io/glacier"
 baseurl: "/glacier"
 timezone: America/Los_Angeles
 
-# Github urls
+# Urls to social networks
 git_address: https://github.com/joaofnfernandes/glacier
 git_edit_address: https://github.com/joaofnfernandes/glacier/edit/master/docs
 twitter_address: https://twitter.com/glacierprotocol
@@ -16,8 +16,12 @@ gitter_address: https://gitter.im/glacierprotocol/lobby
 # Google Analytics
 google_analytics_id: UA-91779256-1
 
+# Bootstrap theme
 bootswatch: paper
 
+# Jekyll plugins. If you want this site to run on Github pages,
+# make sure you only use plugins Github pages supports
+# https://pages.github.com/versions/
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
@@ -35,7 +39,7 @@ defaults:
       layout: default
   - scope:
       path: _docs
-      type: docs #not sure if needed
+      type: docs
     values:
       layout: docs
-      sectionid: docs #try to remove it
+      sectionid: docs
