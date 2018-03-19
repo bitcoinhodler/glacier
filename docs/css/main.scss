@@ -75,8 +75,26 @@ body {
   top:10px
 }
 
+/********************************************************************
+* Styles used in contributors page
+*********************************************************************/
+
+img.profile {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 50%
+}
+
+.profile a > i {
+  margin-right: 10px;
+}
+
+/********************************************************************
+* Styles used in /docs
+*********************************************************************/
 /* Code snippets shouldn't break, they should scroll */
-pre>code {
+pre > code {
   overflow-x: auto;
   white-space: pre;
 }
@@ -94,7 +112,7 @@ span.warning {
   background-color: $brand-warning;
 }
 
-/* Make ordered lists similar to the paper */
+/* Make ordered lists similar to the pdf version of Glacer */
 ol > li > ol > li > ol > li > ol > li > ol {
   list-style-type: lower-roman;
 }
