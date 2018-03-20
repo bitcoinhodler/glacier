@@ -14,7 +14,7 @@ twitter_address: https://twitter.com/glacierprotocol
 gitter_address: https://gitter.im/glacierprotocol/lobby
 
 # Google Analytics
-google_analytics_id: UA-91779256-1
+google_analytics_id:
 
 # Bootstrap theme
 bootswatch: paper

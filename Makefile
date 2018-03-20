@@ -15,8 +15,3 @@ spell-check: dockerfiles/bin/.spellcheck
 dockerfiles/bin/.spellcheck: dockerfiles/spellcheck/Dockerfile dockerfiles/spellcheck/.spelling
 	@docker build -t spellcheck -f $< $(<D)
 	@touch $@
-
-
-# $<     - the first prerequisite
-# $(<D)  - directory part of the first prerequisite
-# $@     - the target
